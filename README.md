@@ -126,11 +126,31 @@ OTOMO/
 │
 ├── main.m
 ├── data/
-│   └── ...
+│   └── AEEEM
+│       └── EQ
+│       └── JDT
+│       └── LC
+│       └── ML
+│       └── PDE
+│   └── NASA
+│       └── CM1
+│       └── MW1
+│       └── PC1
+│       └── PC3
+│       └── PC4
+│   └── RELINK
+│       └── A
+│       └── S
+│       └── Z
+│   └── SOFTLAB
+│       └── AR1
+│       └── AR3
+│       └── AR4
+│       └── AR5
+│       └── AR6
 │
-├── OTOMO-related functions
-│   └── ...
-│
+├── coral.m
+├── otomo.m
 └── README.md
 ```
 
@@ -152,4 +172,4 @@ The complete bibliographic information will be added after publication.
 
 ## Contact
 
-For questions regarding OTOMO, its implementation, or the experimental setup, please contact the authors of the paper.
+For questions regarding OTOMO, please contact suravi.akhter@ulab.edu.bd or golam.kibria@ulab.edu.bd.
