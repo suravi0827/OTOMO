@@ -2,9 +2,8 @@ clear;
 close all;
 clc;
 
-dataset = "SOFTLAB";
-% gamma = 0.4;
-gamma = 0;
+datasets = ["NASA","RELINK","SOFTLAB","AEEEM"];
+gamma = 0.1;
 
 seeds = 1:30;
 nTrees = 100;
@@ -17,6 +16,12 @@ outputRoot = fullfile(pwd,'OTOMO_Results');
 if ~exist(outputRoot,'dir')
     mkdir(outputRoot);
 end
+
+AllResults = table();
+
+for dd = 1:numel(datasets)
+
+dataset = datasets(dd);
 
 files = dir(fullfile('data',char(dataset),'*.xlsx'));
 
@@ -318,6 +323,12 @@ for s = 1:nProj
 end
 
 Result = table(Source,Target,Gamma,Valid_Runs,Purity,Purity_Mean,Purity_SD,ARI_Value,ARI_Mean,ARI_SD,NMI_Value,NMI_Mean,NMI_SD,RF_ROC_AUC,RF_PR_AUC,RF_G_Measure,RF_F1_Score,RF_MCC,LR_ROC_AUC,LR_PR_AUC,LR_G_Measure,LR_F1_Score,LR_MCC,RF_ROC_Mean,RF_ROC_SD,RF_PR_Mean,RF_PR_SD,RF_G_Mean,RF_G_SD,RF_F1_Mean,RF_F1_SD,RF_MCC_Mean,RF_MCC_SD,LR_ROC_Mean,LR_ROC_SD,LR_PR_Mean,LR_PR_SD,LR_G_Mean,LR_G_SD,LR_F1_Mean,LR_F1_SD,LR_MCC_Mean,LR_MCC_SD);
+Result = addvars(Result,repmat(dataset,height(Result),1),'Before',1,'NewVariableNames','Dataset');
+if isempty(AllResults)
+    AllResults = Result;
+else
+    AllResults = [AllResults; Result];
+end
 
 outputFile = fullfile(outputRoot,sprintf('%s_OTOMO_Gamma_%.2f_Results.csv',char(dataset),gamma));
 
@@ -329,6 +340,12 @@ fprintf('Dataset: %s\n',char(dataset));
 fprintf('Gamma: %.2f\n',gamma);
 fprintf('Results: %s\n',outputFile);
 fprintf('====================================================\n');
+
+end
+
+allOutputFile = fullfile(outputRoot,sprintf('All_Datasets_OTOMO_Gamma_%.2f_Results.csv',gamma));
+writetable(AllResults,allOutputFile);
+fprintf('Combined results: %s\n',allOutputFile);
 
 
 function Z = safeZscore(X)
