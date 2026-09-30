@@ -1,4 +1,4 @@
-function [Xs_bal,Ys_bal,purity,ARI,NMI] = otomo(Xs,Ys,Xt,Yt,gamma,ratio,conf)
+function [Xs_bal,Ys_bal,purity,ARI,NMI] = otomo(Xs,Ys,Xt,Yt,gamma,ratio,conf,seed)
 
 if nargin < 5 || isempty(gamma)
     gamma = 0.5;
@@ -50,6 +50,7 @@ if Nsyn == 0
     Ys_bal = Ys;
     return;
 end
+rng(seed,"twister");
 
 clusterIdx = kmeans(Xt,2,'Distance','sqeuclidean','Replicates',20,'MaxIter',1000,'Display','off');
 clusterIdx = double(clusterIdx(:));

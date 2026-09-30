@@ -1,0 +1,5715 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: (MATLAB, The MathWorks, Inc. Version 25.1.0.2943329 R2025a. Operating System: Darwin 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:41 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8122 arm64)
+%%Title: ./PDE_mahalanobis_outliers.eps
+%%CreationDate: 2026-09-29T23:20:43
+%%Pages: (atend)
+%%BoundingBox:    0     0   586   360
+%%LanguageLevel: 3
+%%EndComments
+/bd{bind def}bind def
+/ld{load def}bd
+/GR/grestore ld
+/GS/gsave ld
+/RM/rmoveto ld
+/C/curveto ld
+/t/show ld
+/L/lineto ld
+/RL/rlineto ld
+/ML/setmiterlimit ld
+/CT/concat ld
+/f/fill ld
+/N/newpath ld
+/S/stroke ld
+/CC/setcmykcolor ld
+/A/ashow ld
+/cp/closepath ld
+/RC/setrgbcolor ld
+/LJ/setlinejoin ld
+/GC/setgray ld
+/LW/setlinewidth ld
+/LC/setlinecap ld
+/LJ/setlinejoin ld
+/SD/setdash ld
+/M/moveto ld
+/TX/translate ld
+/R/rotate ld
+/SC/scale ld
+
+/CIRC {0 360 arc}bd
+/F {exch findfont exch scalefont setfont}bd
+/edef{ exch def } def
+/scaleImg{ % width height outputDPI scaleImg
+   /outputDPI edef
+   /height edef
+   /width edef
+   /psDPI 72 def
+   /sDPI psDPI outputDPI div def % DPI scale
+   width sDPI mul % width * (psDPI / outputDPI)
+   height sDPI mul
+   scale
+} def
+
+% LineAttribute methods.linewidth linejoin linecap [dashpattern] dashOffset colorVal(s) <method>
+/LAG {setgray setdash setlinecap setlinejoin setlinewidth} bd
+/LAR {setrgbcolor setdash setlinecap setlinejoin setlinewidth} bd
+/LAC {setcmykcolor setdash setlinecap setlinejoin setlinewidth} bd
+
+% draw line impl
+/DL { % VertexList NVerts StartPt DL
+  N moveto { lineto } repeat stroke} def
+% draw unfilled polyline impl
+/DPL { % VertexList NVerts StartPt DPL
+  N moveto { lineto } repeat closepath stroke} def
+% draw filled polyline impl
+/DPLF { % VertexList NVerts StartPt DPLF
+  N moveto { lineto } repeat closepath fill } def
+/DRL { % VertexList NVerts StartPt DRL
+  N moveto { rlineto } repeat stroke} def
+% draw unfilled polyline impl
+/DRPL { % VertexList NVerts StartPt DRPL
+  N moveto { rlineto } repeat closepath stroke} def
+% draw filled polyline impl
+/DRPLF { % VertexList NVerts StartPt DRPLF
+  N moveto { rlineto } repeat closepath fill } def
+
+%%Page: 1 1
+%%PageBoundingBox:    0     0   586   360
+%%BeginPageSetup
+N
+0 0 M
+585.8 0 L
+585.8 359.3 L
+0 359.3 L
+cp
+clip
+1.00 GC
+0 359.3 585.8 359.3 585.8 0 3 0 0 DPLF
+[   0.5 0 0  -0.5 0 356.3] CT
+%%EndPageSetup
+-24.4 -39 TX
+1.00 LW
+1163 48 1163 681 135 681 3 135 48 DPLF
+2.40 2 0 [] 0 0.85 LAG
+135 681 1 135 48 DL
+477.67 681 1 477.67 48 DL
+820.33 681 1 820.33 48 DL
+1163 681 1 1163 48 DL
+1163 681 1 135 681 DL
+1163 470 1 135 470 DL
+1163 259 1 135 259 DL
+1163 48 1 135 48 DL
+/Helvetica 30.8 F
+0.00 GC
+GS
+551.5 747.6 M
+1 -1 scale
+(Instance Index) t
+GR
+2.40 2 2 [] 0 0.00 LAG
+1163 681 1 135 681 DL
+1163 48 1 135 48 DL
+135 670.72 1 135 681 DL
+135 48 1 135 58.28 DL
+477.67 670.72 1 477.67 681 DL
+477.67 48 1 477.67 58.28 DL
+820.33 670.72 1 820.33 681 DL
+820.33 48 1 820.33 58.28 DL
+1163 670.72 1 1163 681 DL
+1163 48 1 1163 58.28 DL
+/Helvetica 28 F
+GS
+127 712.6 M
+1 -1 scale
+(0) t
+GR
+GS
+454.17 712.6 M
+1 -1 scale
+(500) t
+GR
+GS
+789.33 712.6 M
+1 -1 scale
+(1000) t
+GR
+GS
+1132 712.6 M
+1 -1 scale
+(1500) t
+GR
+/Helvetica 30.8 F
+GS
+49.4 573 M
+1 -1 scale
+90 R
+(Squared Mahalanobis Distance) t
+GR
+135 48 1 135 681 DL
+1163 48 1 1163 681 DL
+145.28 681 1 135 681 DL
+1163 681 1 1152.72 681 DL
+145.28 470 1 135 470 DL
+1163 470 1 1152.72 470 DL
+145.28 259 1 135 259 DL
+1163 259 1 1152.72 259 DL
+145.28 48 1 135 48 DL
+1163 48 1 1152.72 48 DL
+/Helvetica 28 F
+GS
+109.4 689 M
+1 -1 scale
+(0) t
+GR
+GS
+78.4 478 M
+1 -1 scale
+(500) t
+GR
+GS
+63.4 267 M
+1 -1 scale
+(1000) t
+GR
+GS
+63.4 56 M
+1 -1 scale
+(1500) t
+GR
+0.15 0.55 0.87 RC
+N
+136.37 676.82 6.71 CIRC
+cp
+f
+N
+137.06 662.72 6.71 CIRC
+cp
+f
+N
+137.74 662.96 6.71 CIRC
+cp
+f
+N
+140.48 679.99 6.71 CIRC
+cp
+f
+N
+141.17 675.67 6.71 CIRC
+cp
+f
+N
+141.85 679.53 6.71 CIRC
+cp
+f
+N
+142.54 679.46 6.71 CIRC
+cp
+f
+N
+143.22 678.97 6.71 CIRC
+cp
+f
+N
+143.91 666.23 6.71 CIRC
+cp
+f
+N
+144.59 664.38 6.71 CIRC
+cp
+f
+N
+145.28 669.27 6.71 CIRC
+cp
+f
+N
+146.65 678.31 6.71 CIRC
+cp
+f
+N
+147.34 675.63 6.71 CIRC
+cp
+f
+N
+149.39 663.94 6.71 CIRC
+cp
+f
+N
+150.08 674.95 6.71 CIRC
+cp
+f
+N
+150.76 677.46 6.71 CIRC
+cp
+f
+N
+151.45 677.62 6.71 CIRC
+cp
+f
+N
+153.5 674.14 6.71 CIRC
+cp
+f
+N
+154.19 655.66 6.71 CIRC
+cp
+f
+N
+154.87 678.64 6.71 CIRC
+cp
+f
+N
+155.56 654.15 6.71 CIRC
+cp
+f
+N
+156.25 679.45 6.71 CIRC
+cp
+f
+N
+156.93 669.32 6.71 CIRC
+cp
+f
+N
+157.62 657.45 6.71 CIRC
+cp
+f
+N
+158.3 674.17 6.71 CIRC
+cp
+f
+N
+158.99 677.64 6.71 CIRC
+cp
+f
+N
+159.67 672.02 6.71 CIRC
+cp
+f
+N
+161.73 672.76 6.71 CIRC
+cp
+f
+N
+162.41 672.69 6.71 CIRC
+cp
+f
+N
+163.1 675.92 6.71 CIRC
+cp
+f
+N
+163.78 673.12 6.71 CIRC
+cp
+f
+N
+164.47 644.15 6.71 CIRC
+cp
+f
+N
+165.15 675.23 6.71 CIRC
+cp
+f
+N
+165.84 667.09 6.71 CIRC
+cp
+f
+N
+167.21 661.47 6.71 CIRC
+cp
+f
+N
+167.9 678.07 6.71 CIRC
+cp
+f
+N
+168.58 674.91 6.71 CIRC
+cp
+f
+N
+169.27 676.8 6.71 CIRC
+cp
+f
+N
+169.95 677.13 6.71 CIRC
+cp
+f
+N
+170.64 670.61 6.71 CIRC
+cp
+f
+N
+171.32 675.33 6.71 CIRC
+cp
+f
+N
+172.01 672.49 6.71 CIRC
+cp
+f
+N
+172.69 670.81 6.71 CIRC
+cp
+f
+N
+173.38 657.64 6.71 CIRC
+cp
+f
+N
+174.06 676.33 6.71 CIRC
+cp
+f
+N
+174.75 672.51 6.71 CIRC
+cp
+f
+N
+175.43 676.94 6.71 CIRC
+cp
+f
+N
+176.12 675.49 6.71 CIRC
+cp
+f
+N
+176.81 644.91 6.71 CIRC
+cp
+f
+N
+177.49 679.27 6.71 CIRC
+cp
+f
+N
+178.18 676.23 6.71 CIRC
+cp
+f
+N
+180.23 660.55 6.71 CIRC
+cp
+f
+N
+181.6 645.75 6.71 CIRC
+cp
+f
+N
+182.29 672.41 6.71 CIRC
+cp
+f
+N
+182.97 679.27 6.71 CIRC
+cp
+f
+N
+183.66 677.77 6.71 CIRC
+cp
+f
+N
+184.34 665.45 6.71 CIRC
+cp
+f
+N
+185.03 670.2 6.71 CIRC
+cp
+f
+N
+186.4 679.38 6.71 CIRC
+cp
+f
+N
+187.09 664.98 6.71 CIRC
+cp
+f
+N
+187.77 673.45 6.71 CIRC
+cp
+f
+N
+188.46 679.24 6.71 CIRC
+cp
+f
+N
+189.14 645.59 6.71 CIRC
+cp
+f
+N
+190.51 665.32 6.71 CIRC
+cp
+f
+N
+191.2 643.22 6.71 CIRC
+cp
+f
+N
+191.88 650.11 6.71 CIRC
+cp
+f
+N
+192.57 659.58 6.71 CIRC
+cp
+f
+N
+193.25 672.1 6.71 CIRC
+cp
+f
+N
+194.62 678.62 6.71 CIRC
+cp
+f
+N
+195.31 669.5 6.71 CIRC
+cp
+f
+N
+195.99 679.6 6.71 CIRC
+cp
+f
+N
+196.68 666.19 6.71 CIRC
+cp
+f
+N
+197.37 673.47 6.71 CIRC
+cp
+f
+N
+198.05 678.47 6.71 CIRC
+cp
+f
+N
+198.74 677.21 6.71 CIRC
+cp
+f
+N
+199.42 674.39 6.71 CIRC
+cp
+f
+N
+200.79 651.85 6.71 CIRC
+cp
+f
+N
+201.48 673.18 6.71 CIRC
+cp
+f
+N
+202.16 646.01 6.71 CIRC
+cp
+f
+N
+202.85 673.61 6.71 CIRC
+cp
+f
+N
+203.53 678.6 6.71 CIRC
+cp
+f
+N
+204.22 653.75 6.71 CIRC
+cp
+f
+N
+204.9 669.3 6.71 CIRC
+cp
+f
+N
+205.59 679.45 6.71 CIRC
+cp
+f
+N
+207.65 673.11 6.71 CIRC
+cp
+f
+N
+208.33 676.74 6.71 CIRC
+cp
+f
+N
+209.02 672.31 6.71 CIRC
+cp
+f
+N
+209.7 679.41 6.71 CIRC
+cp
+f
+N
+211.07 667.12 6.71 CIRC
+cp
+f
+N
+211.76 677.72 6.71 CIRC
+cp
+f
+N
+212.44 672.6 6.71 CIRC
+cp
+f
+N
+213.13 676.46 6.71 CIRC
+cp
+f
+N
+213.81 678.09 6.71 CIRC
+cp
+f
+N
+215.18 677.03 6.71 CIRC
+cp
+f
+N
+217.24 659.47 6.71 CIRC
+cp
+f
+N
+217.93 674.82 6.71 CIRC
+cp
+f
+N
+219.3 669.81 6.71 CIRC
+cp
+f
+N
+219.98 678.64 6.71 CIRC
+cp
+f
+N
+220.67 664.86 6.71 CIRC
+cp
+f
+N
+221.35 659 6.71 CIRC
+cp
+f
+N
+222.04 665.34 6.71 CIRC
+cp
+f
+N
+223.41 679.5 6.71 CIRC
+cp
+f
+N
+224.09 676.5 6.71 CIRC
+cp
+f
+N
+224.78 677.29 6.71 CIRC
+cp
+f
+N
+225.46 674.17 6.71 CIRC
+cp
+f
+N
+226.15 677.93 6.71 CIRC
+cp
+f
+N
+227.52 679.43 6.71 CIRC
+cp
+f
+N
+228.21 671.77 6.71 CIRC
+cp
+f
+N
+228.89 656.49 6.71 CIRC
+cp
+f
+N
+229.58 668.42 6.71 CIRC
+cp
+f
+N
+230.95 655.09 6.71 CIRC
+cp
+f
+N
+233 671.39 6.71 CIRC
+cp
+f
+N
+233.69 644.96 6.71 CIRC
+cp
+f
+N
+234.37 679.14 6.71 CIRC
+cp
+f
+N
+235.06 669.65 6.71 CIRC
+cp
+f
+N
+235.74 677.38 6.71 CIRC
+cp
+f
+N
+236.43 670.88 6.71 CIRC
+cp
+f
+N
+237.8 677.41 6.71 CIRC
+cp
+f
+N
+238.49 657.75 6.71 CIRC
+cp
+f
+N
+239.17 677.29 6.71 CIRC
+cp
+f
+N
+239.86 644.72 6.71 CIRC
+cp
+f
+N
+241.23 673.91 6.71 CIRC
+cp
+f
+N
+241.91 646.23 6.71 CIRC
+cp
+f
+N
+243.28 676.64 6.71 CIRC
+cp
+f
+N
+244.65 678.75 6.71 CIRC
+cp
+f
+N
+245.34 679.75 6.71 CIRC
+cp
+f
+N
+246.02 658.48 6.71 CIRC
+cp
+f
+N
+246.71 677.31 6.71 CIRC
+cp
+f
+N
+247.39 675.1 6.71 CIRC
+cp
+f
+N
+248.77 669.31 6.71 CIRC
+cp
+f
+N
+249.45 668.01 6.71 CIRC
+cp
+f
+N
+250.82 679.16 6.71 CIRC
+cp
+f
+N
+251.51 671.02 6.71 CIRC
+cp
+f
+N
+252.19 676.16 6.71 CIRC
+cp
+f
+N
+252.88 669.9 6.71 CIRC
+cp
+f
+N
+253.56 670.63 6.71 CIRC
+cp
+f
+N
+254.25 678.55 6.71 CIRC
+cp
+f
+N
+254.93 661.31 6.71 CIRC
+cp
+f
+N
+255.62 678.83 6.71 CIRC
+cp
+f
+N
+256.3 673.32 6.71 CIRC
+cp
+f
+N
+256.99 661.22 6.71 CIRC
+cp
+f
+N
+258.36 679.61 6.71 CIRC
+cp
+f
+N
+259.05 671.03 6.71 CIRC
+cp
+f
+N
+259.73 671.15 6.71 CIRC
+cp
+f
+N
+260.42 671.97 6.71 CIRC
+cp
+f
+N
+261.1 666.49 6.71 CIRC
+cp
+f
+N
+261.79 679.67 6.71 CIRC
+cp
+f
+N
+262.47 670.91 6.71 CIRC
+cp
+f
+N
+263.16 668.51 6.71 CIRC
+cp
+f
+N
+263.84 667.53 6.71 CIRC
+cp
+f
+N
+264.53 677.92 6.71 CIRC
+cp
+f
+N
+265.9 673.13 6.71 CIRC
+cp
+f
+N
+266.58 666.41 6.71 CIRC
+cp
+f
+N
+267.27 677.61 6.71 CIRC
+cp
+f
+N
+267.95 677.31 6.71 CIRC
+cp
+f
+N
+268.64 671.82 6.71 CIRC
+cp
+f
+N
+269.33 661.82 6.71 CIRC
+cp
+f
+N
+270.01 678.75 6.71 CIRC
+cp
+f
+N
+270.7 677.72 6.71 CIRC
+cp
+f
+N
+271.38 663 6.71 CIRC
+cp
+f
+N
+272.75 641.73 6.71 CIRC
+cp
+f
+N
+273.44 677.47 6.71 CIRC
+cp
+f
+N
+274.12 663.73 6.71 CIRC
+cp
+f
+N
+274.81 673.63 6.71 CIRC
+cp
+f
+N
+275.49 669.99 6.71 CIRC
+cp
+f
+N
+277.55 648.88 6.71 CIRC
+cp
+f
+N
+278.23 658.2 6.71 CIRC
+cp
+f
+N
+278.92 667.24 6.71 CIRC
+cp
+f
+N
+279.61 674.91 6.71 CIRC
+cp
+f
+N
+280.98 677.36 6.71 CIRC
+cp
+f
+N
+281.66 661.48 6.71 CIRC
+cp
+f
+N
+282.35 679.54 6.71 CIRC
+cp
+f
+N
+283.03 658.54 6.71 CIRC
+cp
+f
+N
+283.72 679.39 6.71 CIRC
+cp
+f
+N
+284.4 673.07 6.71 CIRC
+cp
+f
+N
+285.77 677.91 6.71 CIRC
+cp
+f
+N
+286.46 677.12 6.71 CIRC
+cp
+f
+N
+287.14 645.84 6.71 CIRC
+cp
+f
+N
+287.83 673.66 6.71 CIRC
+cp
+f
+N
+288.51 676.07 6.71 CIRC
+cp
+f
+N
+289.89 679.44 6.71 CIRC
+cp
+f
+N
+290.57 672.26 6.71 CIRC
+cp
+f
+N
+291.94 670.91 6.71 CIRC
+cp
+f
+N
+292.63 678.06 6.71 CIRC
+cp
+f
+N
+293.31 678.75 6.71 CIRC
+cp
+f
+N
+294 653.95 6.71 CIRC
+cp
+f
+N
+294.68 655.06 6.71 CIRC
+cp
+f
+N
+295.37 678.98 6.71 CIRC
+cp
+f
+N
+296.05 673.43 6.71 CIRC
+cp
+f
+N
+296.74 671.88 6.71 CIRC
+cp
+f
+N
+297.42 669.33 6.71 CIRC
+cp
+f
+N
+298.11 655.47 6.71 CIRC
+cp
+f
+N
+298.79 668.44 6.71 CIRC
+cp
+f
+N
+299.48 659.02 6.71 CIRC
+cp
+f
+N
+300.17 649.1 6.71 CIRC
+cp
+f
+N
+300.85 676.39 6.71 CIRC
+cp
+f
+N
+301.54 674.2 6.71 CIRC
+cp
+f
+N
+302.22 656.01 6.71 CIRC
+cp
+f
+N
+302.91 679.37 6.71 CIRC
+cp
+f
+N
+303.59 651.68 6.71 CIRC
+cp
+f
+N
+304.28 659.87 6.71 CIRC
+cp
+f
+N
+304.96 674.24 6.71 CIRC
+cp
+f
+N
+305.65 673.12 6.71 CIRC
+cp
+f
+N
+307.02 672.17 6.71 CIRC
+cp
+f
+N
+307.7 667.56 6.71 CIRC
+cp
+f
+N
+308.39 677.35 6.71 CIRC
+cp
+f
+N
+309.07 653.95 6.71 CIRC
+cp
+f
+N
+309.76 672.69 6.71 CIRC
+cp
+f
+N
+310.45 678.6 6.71 CIRC
+cp
+f
+N
+311.13 660.67 6.71 CIRC
+cp
+f
+N
+311.82 669.93 6.71 CIRC
+cp
+f
+N
+312.5 673.25 6.71 CIRC
+cp
+f
+N
+313.19 665.04 6.71 CIRC
+cp
+f
+N
+313.87 674.71 6.71 CIRC
+cp
+f
+N
+314.56 678.71 6.71 CIRC
+cp
+f
+N
+315.24 678.01 6.71 CIRC
+cp
+f
+N
+316.61 674.37 6.71 CIRC
+cp
+f
+N
+317.3 679.27 6.71 CIRC
+cp
+f
+N
+317.98 662.99 6.71 CIRC
+cp
+f
+N
+318.67 679.72 6.71 CIRC
+cp
+f
+N
+319.35 670.88 6.71 CIRC
+cp
+f
+N
+320.04 678.69 6.71 CIRC
+cp
+f
+N
+320.73 660.14 6.71 CIRC
+cp
+f
+N
+322.1 662.31 6.71 CIRC
+cp
+f
+N
+322.78 675.04 6.71 CIRC
+cp
+f
+N
+323.47 674.6 6.71 CIRC
+cp
+f
+N
+324.15 674.05 6.71 CIRC
+cp
+f
+N
+325.52 677.97 6.71 CIRC
+cp
+f
+N
+326.21 649.66 6.71 CIRC
+cp
+f
+N
+327.58 677.76 6.71 CIRC
+cp
+f
+N
+328.26 650.21 6.71 CIRC
+cp
+f
+N
+329.63 675.26 6.71 CIRC
+cp
+f
+N
+330.32 666.14 6.71 CIRC
+cp
+f
+N
+331.69 661.61 6.71 CIRC
+cp
+f
+N
+332.38 679.68 6.71 CIRC
+cp
+f
+N
+333.06 677.39 6.71 CIRC
+cp
+f
+N
+333.75 641.97 6.71 CIRC
+cp
+f
+N
+334.43 676.85 6.71 CIRC
+cp
+f
+N
+335.12 653.1 6.71 CIRC
+cp
+f
+N
+335.8 678.09 6.71 CIRC
+cp
+f
+N
+337.17 677.15 6.71 CIRC
+cp
+f
+N
+337.86 670.86 6.71 CIRC
+cp
+f
+N
+338.54 679.21 6.71 CIRC
+cp
+f
+N
+339.23 677.71 6.71 CIRC
+cp
+f
+N
+339.91 650.18 6.71 CIRC
+cp
+f
+N
+340.6 662.41 6.71 CIRC
+cp
+f
+N
+341.29 679.68 6.71 CIRC
+cp
+f
+N
+341.97 679.87 6.71 CIRC
+cp
+f
+N
+342.66 660.82 6.71 CIRC
+cp
+f
+N
+343.34 650.26 6.71 CIRC
+cp
+f
+N
+344.03 658.59 6.71 CIRC
+cp
+f
+N
+344.71 679.47 6.71 CIRC
+cp
+f
+N
+345.4 675.85 6.71 CIRC
+cp
+f
+N
+346.08 659.45 6.71 CIRC
+cp
+f
+N
+347.45 644.01 6.71 CIRC
+cp
+f
+N
+348.14 643.59 6.71 CIRC
+cp
+f
+N
+348.82 677.36 6.71 CIRC
+cp
+f
+N
+349.51 648.87 6.71 CIRC
+cp
+f
+N
+350.19 678.87 6.71 CIRC
+cp
+f
+N
+350.88 676.3 6.71 CIRC
+cp
+f
+N
+352.25 678.46 6.71 CIRC
+cp
+f
+N
+352.94 677.56 6.71 CIRC
+cp
+f
+N
+354.31 671.38 6.71 CIRC
+cp
+f
+N
+354.99 677.4 6.71 CIRC
+cp
+f
+N
+355.68 676.74 6.71 CIRC
+cp
+f
+N
+356.36 673.94 6.71 CIRC
+cp
+f
+N
+357.05 670.92 6.71 CIRC
+cp
+f
+N
+357.73 669.88 6.71 CIRC
+cp
+f
+N
+358.42 678.08 6.71 CIRC
+cp
+f
+N
+360.47 673.12 6.71 CIRC
+cp
+f
+N
+361.16 667.62 6.71 CIRC
+cp
+f
+N
+361.85 654.41 6.71 CIRC
+cp
+f
+N
+362.53 664.9 6.71 CIRC
+cp
+f
+N
+363.22 677 6.71 CIRC
+cp
+f
+N
+363.9 652.81 6.71 CIRC
+cp
+f
+N
+365.27 674.82 6.71 CIRC
+cp
+f
+N
+365.96 678.7 6.71 CIRC
+cp
+f
+N
+366.64 678.47 6.71 CIRC
+cp
+f
+N
+367.33 658.77 6.71 CIRC
+cp
+f
+N
+368.01 663.75 6.71 CIRC
+cp
+f
+N
+369.38 672.12 6.71 CIRC
+cp
+f
+N
+370.07 677.08 6.71 CIRC
+cp
+f
+N
+370.75 675.76 6.71 CIRC
+cp
+f
+N
+371.44 678.74 6.71 CIRC
+cp
+f
+N
+372.13 679.43 6.71 CIRC
+cp
+f
+N
+372.81 678.05 6.71 CIRC
+cp
+f
+N
+373.5 662.25 6.71 CIRC
+cp
+f
+N
+374.18 672.7 6.71 CIRC
+cp
+f
+N
+374.87 670.17 6.71 CIRC
+cp
+f
+N
+375.55 674.96 6.71 CIRC
+cp
+f
+N
+376.24 677.2 6.71 CIRC
+cp
+f
+N
+376.92 670.53 6.71 CIRC
+cp
+f
+N
+377.61 679.37 6.71 CIRC
+cp
+f
+N
+378.29 676.1 6.71 CIRC
+cp
+f
+N
+378.98 679.39 6.71 CIRC
+cp
+f
+N
+379.66 673.85 6.71 CIRC
+cp
+f
+N
+380.35 662.89 6.71 CIRC
+cp
+f
+N
+381.72 665.26 6.71 CIRC
+cp
+f
+N
+382.41 672.92 6.71 CIRC
+cp
+f
+N
+383.09 663.07 6.71 CIRC
+cp
+f
+N
+383.78 678.7 6.71 CIRC
+cp
+f
+N
+384.46 662.83 6.71 CIRC
+cp
+f
+N
+385.15 674.77 6.71 CIRC
+cp
+f
+N
+387.2 668.69 6.71 CIRC
+cp
+f
+N
+387.89 676.77 6.71 CIRC
+cp
+f
+N
+388.57 655.72 6.71 CIRC
+cp
+f
+N
+389.26 651.73 6.71 CIRC
+cp
+f
+N
+389.94 675.83 6.71 CIRC
+cp
+f
+N
+390.63 674.95 6.71 CIRC
+cp
+f
+N
+391.31 672.66 6.71 CIRC
+cp
+f
+N
+392 671.2 6.71 CIRC
+cp
+f
+N
+392.69 674.18 6.71 CIRC
+cp
+f
+N
+393.37 669.71 6.71 CIRC
+cp
+f
+N
+394.06 666.9 6.71 CIRC
+cp
+f
+N
+394.74 678.28 6.71 CIRC
+cp
+f
+N
+395.43 677.75 6.71 CIRC
+cp
+f
+N
+396.11 677.94 6.71 CIRC
+cp
+f
+N
+396.8 663.06 6.71 CIRC
+cp
+f
+N
+397.48 678.54 6.71 CIRC
+cp
+f
+N
+398.17 670.98 6.71 CIRC
+cp
+f
+N
+398.85 668.71 6.71 CIRC
+cp
+f
+N
+399.54 676.4 6.71 CIRC
+cp
+f
+N
+400.22 659.38 6.71 CIRC
+cp
+f
+N
+400.91 673.52 6.71 CIRC
+cp
+f
+N
+401.59 657.26 6.71 CIRC
+cp
+f
+N
+402.28 676.68 6.71 CIRC
+cp
+f
+N
+403.65 678.41 6.71 CIRC
+cp
+f
+N
+404.34 677.92 6.71 CIRC
+cp
+f
+N
+405.71 678.33 6.71 CIRC
+cp
+f
+N
+406.39 652.96 6.71 CIRC
+cp
+f
+N
+407.08 678.22 6.71 CIRC
+cp
+f
+N
+407.76 675.45 6.71 CIRC
+cp
+f
+N
+408.45 673.63 6.71 CIRC
+cp
+f
+N
+409.13 658.5 6.71 CIRC
+cp
+f
+N
+409.82 672.26 6.71 CIRC
+cp
+f
+N
+410.5 672.44 6.71 CIRC
+cp
+f
+N
+411.19 679.5 6.71 CIRC
+cp
+f
+N
+413.25 675.63 6.71 CIRC
+cp
+f
+N
+414.62 674.94 6.71 CIRC
+cp
+f
+N
+415.3 648.7 6.71 CIRC
+cp
+f
+N
+415.99 677.38 6.71 CIRC
+cp
+f
+N
+416.67 646.06 6.71 CIRC
+cp
+f
+N
+418.04 665.79 6.71 CIRC
+cp
+f
+N
+418.73 672.87 6.71 CIRC
+cp
+f
+N
+419.41 677.79 6.71 CIRC
+cp
+f
+N
+420.1 663.28 6.71 CIRC
+cp
+f
+N
+420.78 642.81 6.71 CIRC
+cp
+f
+N
+422.15 652.21 6.71 CIRC
+cp
+f
+N
+424.21 648.62 6.71 CIRC
+cp
+f
+N
+425.58 677.84 6.71 CIRC
+cp
+f
+N
+426.27 672.53 6.71 CIRC
+cp
+f
+N
+427.64 654.22 6.71 CIRC
+cp
+f
+N
+428.32 643.38 6.71 CIRC
+cp
+f
+N
+429.01 654.17 6.71 CIRC
+cp
+f
+N
+430.38 657.57 6.71 CIRC
+cp
+f
+N
+431.06 678.45 6.71 CIRC
+cp
+f
+N
+431.75 677.69 6.71 CIRC
+cp
+f
+N
+432.43 677.89 6.71 CIRC
+cp
+f
+N
+433.12 675.31 6.71 CIRC
+cp
+f
+N
+433.81 673.62 6.71 CIRC
+cp
+f
+N
+434.49 673.52 6.71 CIRC
+cp
+f
+N
+435.18 676.86 6.71 CIRC
+cp
+f
+N
+435.86 672.72 6.71 CIRC
+cp
+f
+N
+436.55 678.79 6.71 CIRC
+cp
+f
+N
+437.23 660.51 6.71 CIRC
+cp
+f
+N
+437.92 666.72 6.71 CIRC
+cp
+f
+N
+438.6 674.79 6.71 CIRC
+cp
+f
+N
+439.29 678.78 6.71 CIRC
+cp
+f
+N
+439.97 642.75 6.71 CIRC
+cp
+f
+N
+440.66 676.8 6.71 CIRC
+cp
+f
+N
+441.34 676.59 6.71 CIRC
+cp
+f
+N
+442.03 669.16 6.71 CIRC
+cp
+f
+N
+442.71 679.32 6.71 CIRC
+cp
+f
+N
+443.4 673.2 6.71 CIRC
+cp
+f
+N
+444.09 675.65 6.71 CIRC
+cp
+f
+N
+444.77 644.98 6.71 CIRC
+cp
+f
+N
+445.46 673.05 6.71 CIRC
+cp
+f
+N
+447.51 672.21 6.71 CIRC
+cp
+f
+N
+448.2 673.3 6.71 CIRC
+cp
+f
+N
+448.88 645.82 6.71 CIRC
+cp
+f
+N
+450.25 673.01 6.71 CIRC
+cp
+f
+N
+450.94 678.52 6.71 CIRC
+cp
+f
+N
+451.62 676.57 6.71 CIRC
+cp
+f
+N
+452.31 676.04 6.71 CIRC
+cp
+f
+N
+453.68 678.94 6.71 CIRC
+cp
+f
+N
+454.37 676.83 6.71 CIRC
+cp
+f
+N
+455.05 673.32 6.71 CIRC
+cp
+f
+N
+455.74 678.11 6.71 CIRC
+cp
+f
+N
+456.42 667.89 6.71 CIRC
+cp
+f
+N
+457.79 677.9 6.71 CIRC
+cp
+f
+N
+458.48 663.53 6.71 CIRC
+cp
+f
+N
+459.85 661.56 6.71 CIRC
+cp
+f
+N
+460.53 660.06 6.71 CIRC
+cp
+f
+N
+461.9 663.72 6.71 CIRC
+cp
+f
+N
+462.59 677.82 6.71 CIRC
+cp
+f
+N
+463.27 674.65 6.71 CIRC
+cp
+f
+N
+464.65 670.64 6.71 CIRC
+cp
+f
+N
+465.33 676.3 6.71 CIRC
+cp
+f
+N
+466.02 660.82 6.71 CIRC
+cp
+f
+N
+466.7 675.45 6.71 CIRC
+cp
+f
+N
+468.07 675.75 6.71 CIRC
+cp
+f
+N
+468.76 674.7 6.71 CIRC
+cp
+f
+N
+469.44 672.78 6.71 CIRC
+cp
+f
+N
+470.13 653.83 6.71 CIRC
+cp
+f
+N
+470.81 676.56 6.71 CIRC
+cp
+f
+N
+471.5 668.78 6.71 CIRC
+cp
+f
+N
+472.87 676.04 6.71 CIRC
+cp
+f
+N
+473.55 675.74 6.71 CIRC
+cp
+f
+N
+474.24 676.52 6.71 CIRC
+cp
+f
+N
+475.61 670.49 6.71 CIRC
+cp
+f
+N
+476.98 674.83 6.71 CIRC
+cp
+f
+N
+477.67 671.25 6.71 CIRC
+cp
+f
+N
+478.35 676.25 6.71 CIRC
+cp
+f
+N
+479.04 671.45 6.71 CIRC
+cp
+f
+N
+479.72 676.32 6.71 CIRC
+cp
+f
+N
+480.41 666.92 6.71 CIRC
+cp
+f
+N
+481.09 652.19 6.71 CIRC
+cp
+f
+N
+482.46 668.6 6.71 CIRC
+cp
+f
+N
+483.15 678.52 6.71 CIRC
+cp
+f
+N
+483.83 652.29 6.71 CIRC
+cp
+f
+N
+484.52 676.35 6.71 CIRC
+cp
+f
+N
+485.21 679.05 6.71 CIRC
+cp
+f
+N
+486.58 673.19 6.71 CIRC
+cp
+f
+N
+487.26 678.95 6.71 CIRC
+cp
+f
+N
+487.95 679.55 6.71 CIRC
+cp
+f
+N
+488.63 679.14 6.71 CIRC
+cp
+f
+N
+489.32 677.25 6.71 CIRC
+cp
+f
+N
+490 651.61 6.71 CIRC
+cp
+f
+N
+490.69 677.52 6.71 CIRC
+cp
+f
+N
+492.06 670.95 6.71 CIRC
+cp
+f
+N
+492.74 659.92 6.71 CIRC
+cp
+f
+N
+493.43 679.52 6.71 CIRC
+cp
+f
+N
+494.11 675.98 6.71 CIRC
+cp
+f
+N
+494.8 675.64 6.71 CIRC
+cp
+f
+N
+495.49 673.74 6.71 CIRC
+cp
+f
+N
+496.17 678.63 6.71 CIRC
+cp
+f
+N
+496.86 662.1 6.71 CIRC
+cp
+f
+N
+497.54 659.46 6.71 CIRC
+cp
+f
+N
+499.6 667.79 6.71 CIRC
+cp
+f
+N
+501.65 674.54 6.71 CIRC
+cp
+f
+N
+502.34 665.83 6.71 CIRC
+cp
+f
+N
+503.02 673.61 6.71 CIRC
+cp
+f
+N
+503.71 678.12 6.71 CIRC
+cp
+f
+N
+504.39 659.29 6.71 CIRC
+cp
+f
+N
+505.08 678.44 6.71 CIRC
+cp
+f
+N
+505.77 674.87 6.71 CIRC
+cp
+f
+N
+506.45 678.76 6.71 CIRC
+cp
+f
+N
+507.14 666.11 6.71 CIRC
+cp
+f
+N
+507.82 672.5 6.71 CIRC
+cp
+f
+N
+508.51 665.47 6.71 CIRC
+cp
+f
+N
+509.88 667.25 6.71 CIRC
+cp
+f
+N
+510.56 673.52 6.71 CIRC
+cp
+f
+N
+511.25 676.08 6.71 CIRC
+cp
+f
+N
+511.93 676.09 6.71 CIRC
+cp
+f
+N
+512.62 662.05 6.71 CIRC
+cp
+f
+N
+513.3 675.15 6.71 CIRC
+cp
+f
+N
+515.36 675.42 6.71 CIRC
+cp
+f
+N
+516.73 676.64 6.71 CIRC
+cp
+f
+N
+517.42 659.47 6.71 CIRC
+cp
+f
+N
+518.1 655.73 6.71 CIRC
+cp
+f
+N
+518.79 669.8 6.71 CIRC
+cp
+f
+N
+519.47 672.25 6.71 CIRC
+cp
+f
+N
+520.16 651 6.71 CIRC
+cp
+f
+N
+520.84 654.83 6.71 CIRC
+cp
+f
+N
+521.53 669.74 6.71 CIRC
+cp
+f
+N
+522.21 672.17 6.71 CIRC
+cp
+f
+N
+522.9 677.49 6.71 CIRC
+cp
+f
+N
+523.58 648.94 6.71 CIRC
+cp
+f
+N
+524.27 674.53 6.71 CIRC
+cp
+f
+N
+524.95 658.76 6.71 CIRC
+cp
+f
+N
+525.64 662.46 6.71 CIRC
+cp
+f
+N
+526.33 660.12 6.71 CIRC
+cp
+f
+N
+527.01 676.36 6.71 CIRC
+cp
+f
+N
+527.7 672.49 6.71 CIRC
+cp
+f
+N
+528.38 679.78 6.71 CIRC
+cp
+f
+N
+529.07 673.23 6.71 CIRC
+cp
+f
+N
+529.75 670.05 6.71 CIRC
+cp
+f
+N
+530.44 670.75 6.71 CIRC
+cp
+f
+N
+531.81 675.64 6.71 CIRC
+cp
+f
+N
+532.49 645.2 6.71 CIRC
+cp
+f
+N
+533.18 678.73 6.71 CIRC
+cp
+f
+N
+533.86 677.93 6.71 CIRC
+cp
+f
+N
+534.55 678.48 6.71 CIRC
+cp
+f
+N
+535.23 675.75 6.71 CIRC
+cp
+f
+N
+537.29 678.59 6.71 CIRC
+cp
+f
+N
+537.98 660.3 6.71 CIRC
+cp
+f
+N
+538.66 677.71 6.71 CIRC
+cp
+f
+N
+539.35 677.9 6.71 CIRC
+cp
+f
+N
+540.03 674.17 6.71 CIRC
+cp
+f
+N
+541.4 678.18 6.71 CIRC
+cp
+f
+N
+542.09 644.19 6.71 CIRC
+cp
+f
+N
+542.77 667.69 6.71 CIRC
+cp
+f
+N
+543.46 676.18 6.71 CIRC
+cp
+f
+N
+544.14 667.31 6.71 CIRC
+cp
+f
+N
+544.83 660.69 6.71 CIRC
+cp
+f
+N
+545.51 673.67 6.71 CIRC
+cp
+f
+N
+546.2 679.48 6.71 CIRC
+cp
+f
+N
+546.89 653.36 6.71 CIRC
+cp
+f
+N
+548.26 678.89 6.71 CIRC
+cp
+f
+N
+548.94 668.06 6.71 CIRC
+cp
+f
+N
+549.63 641.96 6.71 CIRC
+cp
+f
+N
+550.31 643.22 6.71 CIRC
+cp
+f
+N
+551 667.14 6.71 CIRC
+cp
+f
+N
+551.68 649.72 6.71 CIRC
+cp
+f
+N
+552.37 657.83 6.71 CIRC
+cp
+f
+N
+554.42 672.26 6.71 CIRC
+cp
+f
+N
+555.11 677.41 6.71 CIRC
+cp
+f
+N
+555.79 644.08 6.71 CIRC
+cp
+f
+N
+556.48 677.84 6.71 CIRC
+cp
+f
+N
+557.17 664 6.71 CIRC
+cp
+f
+N
+557.85 677.94 6.71 CIRC
+cp
+f
+N
+558.54 667.43 6.71 CIRC
+cp
+f
+N
+559.22 674.81 6.71 CIRC
+cp
+f
+N
+559.91 669.51 6.71 CIRC
+cp
+f
+N
+560.59 678.31 6.71 CIRC
+cp
+f
+N
+561.28 657.57 6.71 CIRC
+cp
+f
+N
+561.96 657.63 6.71 CIRC
+cp
+f
+N
+562.65 679.58 6.71 CIRC
+cp
+f
+N
+563.33 676.45 6.71 CIRC
+cp
+f
+N
+564.7 674.38 6.71 CIRC
+cp
+f
+N
+566.76 674.26 6.71 CIRC
+cp
+f
+N
+567.45 670.46 6.71 CIRC
+cp
+f
+N
+568.13 665.37 6.71 CIRC
+cp
+f
+N
+568.82 675.88 6.71 CIRC
+cp
+f
+N
+569.5 671.35 6.71 CIRC
+cp
+f
+N
+570.19 658.94 6.71 CIRC
+cp
+f
+N
+570.87 671.87 6.71 CIRC
+cp
+f
+N
+571.56 666.97 6.71 CIRC
+cp
+f
+N
+572.24 678.36 6.71 CIRC
+cp
+f
+N
+572.93 679.21 6.71 CIRC
+cp
+f
+N
+574.3 662.25 6.71 CIRC
+cp
+f
+N
+574.98 679.38 6.71 CIRC
+cp
+f
+N
+577.04 678.05 6.71 CIRC
+cp
+f
+N
+577.73 660.29 6.71 CIRC
+cp
+f
+N
+578.41 658.17 6.71 CIRC
+cp
+f
+N
+580.47 677.83 6.71 CIRC
+cp
+f
+N
+581.15 678.86 6.71 CIRC
+cp
+f
+N
+582.52 673.37 6.71 CIRC
+cp
+f
+N
+583.21 678.67 6.71 CIRC
+cp
+f
+N
+583.89 678.26 6.71 CIRC
+cp
+f
+N
+585.26 673.3 6.71 CIRC
+cp
+f
+N
+585.95 670.91 6.71 CIRC
+cp
+f
+N
+586.63 675.2 6.71 CIRC
+cp
+f
+N
+587.32 678.79 6.71 CIRC
+cp
+f
+N
+588.01 677.39 6.71 CIRC
+cp
+f
+N
+588.69 666.4 6.71 CIRC
+cp
+f
+N
+589.38 674.35 6.71 CIRC
+cp
+f
+N
+590.06 665.65 6.71 CIRC
+cp
+f
+N
+590.75 662 6.71 CIRC
+cp
+f
+N
+591.43 678.71 6.71 CIRC
+cp
+f
+N
+592.12 673.52 6.71 CIRC
+cp
+f
+N
+592.8 645.83 6.71 CIRC
+cp
+f
+N
+593.49 663.82 6.71 CIRC
+cp
+f
+N
+594.17 671.85 6.71 CIRC
+cp
+f
+N
+594.86 675.01 6.71 CIRC
+cp
+f
+N
+595.54 672.85 6.71 CIRC
+cp
+f
+N
+596.23 678.72 6.71 CIRC
+cp
+f
+N
+596.91 678.34 6.71 CIRC
+cp
+f
+N
+597.6 679.09 6.71 CIRC
+cp
+f
+N
+598.29 670.43 6.71 CIRC
+cp
+f
+N
+598.97 665.17 6.71 CIRC
+cp
+f
+N
+599.66 673.64 6.71 CIRC
+cp
+f
+N
+600.34 643.73 6.71 CIRC
+cp
+f
+N
+601.03 664.99 6.71 CIRC
+cp
+f
+N
+602.4 677.22 6.71 CIRC
+cp
+f
+N
+603.77 672.93 6.71 CIRC
+cp
+f
+N
+605.14 662.97 6.71 CIRC
+cp
+f
+N
+605.82 654.31 6.71 CIRC
+cp
+f
+N
+607.19 671.12 6.71 CIRC
+cp
+f
+N
+608.57 672.24 6.71 CIRC
+cp
+f
+N
+609.25 672 6.71 CIRC
+cp
+f
+N
+609.94 677.91 6.71 CIRC
+cp
+f
+N
+610.62 676.38 6.71 CIRC
+cp
+f
+N
+611.31 679.1 6.71 CIRC
+cp
+f
+N
+612.68 668.63 6.71 CIRC
+cp
+f
+N
+613.36 669.98 6.71 CIRC
+cp
+f
+N
+614.05 659.31 6.71 CIRC
+cp
+f
+N
+614.73 651.32 6.71 CIRC
+cp
+f
+N
+615.42 678.73 6.71 CIRC
+cp
+f
+N
+616.79 677.31 6.71 CIRC
+cp
+f
+N
+617.47 648.46 6.71 CIRC
+cp
+f
+N
+618.16 678.29 6.71 CIRC
+cp
+f
+N
+618.85 679.25 6.71 CIRC
+cp
+f
+N
+619.53 678.66 6.71 CIRC
+cp
+f
+N
+620.22 659.95 6.71 CIRC
+cp
+f
+N
+620.9 649.88 6.71 CIRC
+cp
+f
+N
+621.59 672.47 6.71 CIRC
+cp
+f
+N
+622.27 678.17 6.71 CIRC
+cp
+f
+N
+622.96 661.21 6.71 CIRC
+cp
+f
+N
+623.64 674.45 6.71 CIRC
+cp
+f
+N
+627.75 672.42 6.71 CIRC
+cp
+f
+N
+628.44 667.32 6.71 CIRC
+cp
+f
+N
+629.81 670.64 6.71 CIRC
+cp
+f
+N
+630.5 645.68 6.71 CIRC
+cp
+f
+N
+631.18 643.93 6.71 CIRC
+cp
+f
+N
+631.87 655.13 6.71 CIRC
+cp
+f
+N
+632.55 675.04 6.71 CIRC
+cp
+f
+N
+633.24 677.81 6.71 CIRC
+cp
+f
+N
+633.92 678.15 6.71 CIRC
+cp
+f
+N
+634.61 648.06 6.71 CIRC
+cp
+f
+N
+635.29 679.82 6.71 CIRC
+cp
+f
+N
+636.66 679.77 6.71 CIRC
+cp
+f
+N
+637.35 679.61 6.71 CIRC
+cp
+f
+N
+638.03 659.94 6.71 CIRC
+cp
+f
+N
+638.72 673.31 6.71 CIRC
+cp
+f
+N
+639.41 677.44 6.71 CIRC
+cp
+f
+N
+640.78 668.01 6.71 CIRC
+cp
+f
+N
+641.46 673.24 6.71 CIRC
+cp
+f
+N
+642.83 674.16 6.71 CIRC
+cp
+f
+N
+643.52 676.82 6.71 CIRC
+cp
+f
+N
+644.2 679.21 6.71 CIRC
+cp
+f
+N
+644.89 671.54 6.71 CIRC
+cp
+f
+N
+645.57 678.61 6.71 CIRC
+cp
+f
+N
+646.26 676.77 6.71 CIRC
+cp
+f
+N
+646.94 653.45 6.71 CIRC
+cp
+f
+N
+647.63 665.27 6.71 CIRC
+cp
+f
+N
+648.31 677.5 6.71 CIRC
+cp
+f
+N
+649 675.84 6.71 CIRC
+cp
+f
+N
+649.69 664.53 6.71 CIRC
+cp
+f
+N
+650.37 674.86 6.71 CIRC
+cp
+f
+N
+651.06 673.82 6.71 CIRC
+cp
+f
+N
+651.74 679.42 6.71 CIRC
+cp
+f
+N
+652.43 678.4 6.71 CIRC
+cp
+f
+N
+653.11 678.5 6.71 CIRC
+cp
+f
+N
+654.48 646.8 6.71 CIRC
+cp
+f
+N
+655.17 678.07 6.71 CIRC
+cp
+f
+N
+655.85 665.68 6.71 CIRC
+cp
+f
+N
+656.54 658.55 6.71 CIRC
+cp
+f
+N
+657.91 676.8 6.71 CIRC
+cp
+f
+N
+658.59 669.21 6.71 CIRC
+cp
+f
+N
+659.28 676.92 6.71 CIRC
+cp
+f
+N
+659.97 673.48 6.71 CIRC
+cp
+f
+N
+660.65 656.81 6.71 CIRC
+cp
+f
+N
+661.34 677.28 6.71 CIRC
+cp
+f
+N
+662.02 677.65 6.71 CIRC
+cp
+f
+N
+662.71 658.48 6.71 CIRC
+cp
+f
+N
+663.39 670.77 6.71 CIRC
+cp
+f
+N
+664.08 668.76 6.71 CIRC
+cp
+f
+N
+664.76 664.01 6.71 CIRC
+cp
+f
+N
+665.45 677.26 6.71 CIRC
+cp
+f
+N
+666.82 660.14 6.71 CIRC
+cp
+f
+N
+667.5 667.86 6.71 CIRC
+cp
+f
+N
+668.19 674.86 6.71 CIRC
+cp
+f
+N
+668.87 679.27 6.71 CIRC
+cp
+f
+N
+669.56 675.95 6.71 CIRC
+cp
+f
+N
+670.93 678.59 6.71 CIRC
+cp
+f
+N
+671.62 656.32 6.71 CIRC
+cp
+f
+N
+672.3 669.67 6.71 CIRC
+cp
+f
+N
+672.99 670.74 6.71 CIRC
+cp
+f
+N
+673.67 673.6 6.71 CIRC
+cp
+f
+N
+674.36 675.45 6.71 CIRC
+cp
+f
+N
+675.04 671.29 6.71 CIRC
+cp
+f
+N
+675.73 675.63 6.71 CIRC
+cp
+f
+N
+676.41 655.69 6.71 CIRC
+cp
+f
+N
+677.1 673.17 6.71 CIRC
+cp
+f
+N
+677.78 670.37 6.71 CIRC
+cp
+f
+N
+678.47 671.05 6.71 CIRC
+cp
+f
+N
+679.84 665.82 6.71 CIRC
+cp
+f
+N
+681.21 673.52 6.71 CIRC
+cp
+f
+N
+681.9 678.57 6.71 CIRC
+cp
+f
+N
+682.58 664.41 6.71 CIRC
+cp
+f
+N
+683.27 676.52 6.71 CIRC
+cp
+f
+N
+684.64 677.02 6.71 CIRC
+cp
+f
+N
+686.01 651.91 6.71 CIRC
+cp
+f
+N
+686.69 656.28 6.71 CIRC
+cp
+f
+N
+687.38 670.03 6.71 CIRC
+cp
+f
+N
+688.06 679.98 6.71 CIRC
+cp
+f
+N
+688.75 657.68 6.71 CIRC
+cp
+f
+N
+690.12 679.16 6.71 CIRC
+cp
+f
+N
+690.81 654.98 6.71 CIRC
+cp
+f
+N
+691.49 659.42 6.71 CIRC
+cp
+f
+N
+692.18 671.82 6.71 CIRC
+cp
+f
+N
+692.86 678.39 6.71 CIRC
+cp
+f
+N
+693.55 678.03 6.71 CIRC
+cp
+f
+N
+694.23 679.19 6.71 CIRC
+cp
+f
+N
+694.92 659.75 6.71 CIRC
+cp
+f
+N
+695.6 677.74 6.71 CIRC
+cp
+f
+N
+696.29 679.14 6.71 CIRC
+cp
+f
+N
+696.97 658.61 6.71 CIRC
+cp
+f
+N
+697.66 672.74 6.71 CIRC
+cp
+f
+N
+698.34 677.7 6.71 CIRC
+cp
+f
+N
+699.03 644.92 6.71 CIRC
+cp
+f
+N
+699.71 671.21 6.71 CIRC
+cp
+f
+N
+700.4 675.23 6.71 CIRC
+cp
+f
+N
+701.09 668.36 6.71 CIRC
+cp
+f
+N
+701.77 673.47 6.71 CIRC
+cp
+f
+N
+703.14 671.57 6.71 CIRC
+cp
+f
+N
+703.83 674.9 6.71 CIRC
+cp
+f
+N
+704.51 679.13 6.71 CIRC
+cp
+f
+N
+705.88 673.69 6.71 CIRC
+cp
+f
+N
+707.94 673.52 6.71 CIRC
+cp
+f
+N
+708.62 676.92 6.71 CIRC
+cp
+f
+N
+710.68 670.53 6.71 CIRC
+cp
+f
+N
+711.37 663.29 6.71 CIRC
+cp
+f
+N
+712.05 678.93 6.71 CIRC
+cp
+f
+N
+712.74 670.09 6.71 CIRC
+cp
+f
+N
+713.42 676.95 6.71 CIRC
+cp
+f
+N
+714.11 670.83 6.71 CIRC
+cp
+f
+N
+714.79 657.38 6.71 CIRC
+cp
+f
+N
+716.16 670.86 6.71 CIRC
+cp
+f
+N
+716.85 679.99 6.71 CIRC
+cp
+f
+N
+717.53 678.67 6.71 CIRC
+cp
+f
+N
+718.22 670.65 6.71 CIRC
+cp
+f
+N
+718.9 663.54 6.71 CIRC
+cp
+f
+N
+719.59 674.77 6.71 CIRC
+cp
+f
+N
+720.27 669.76 6.71 CIRC
+cp
+f
+N
+720.96 675.63 6.71 CIRC
+cp
+f
+N
+723.02 679.25 6.71 CIRC
+cp
+f
+N
+723.7 673.19 6.71 CIRC
+cp
+f
+N
+725.07 675.66 6.71 CIRC
+cp
+f
+N
+725.76 662.78 6.71 CIRC
+cp
+f
+N
+727.13 668.9 6.71 CIRC
+cp
+f
+N
+728.5 655.41 6.71 CIRC
+cp
+f
+N
+729.18 666.26 6.71 CIRC
+cp
+f
+N
+729.87 677.85 6.71 CIRC
+cp
+f
+N
+730.55 673 6.71 CIRC
+cp
+f
+N
+731.24 665.77 6.71 CIRC
+cp
+f
+N
+732.61 677.89 6.71 CIRC
+cp
+f
+N
+733.3 662.18 6.71 CIRC
+cp
+f
+N
+734.67 650.26 6.71 CIRC
+cp
+f
+N
+735.35 677.94 6.71 CIRC
+cp
+f
+N
+736.04 669.45 6.71 CIRC
+cp
+f
+N
+736.72 678.79 6.71 CIRC
+cp
+f
+N
+737.41 675.07 6.71 CIRC
+cp
+f
+N
+738.78 678.87 6.71 CIRC
+cp
+f
+N
+739.46 678.05 6.71 CIRC
+cp
+f
+N
+740.15 677.19 6.71 CIRC
+cp
+f
+N
+740.83 650.9 6.71 CIRC
+cp
+f
+N
+741.52 678.24 6.71 CIRC
+cp
+f
+N
+742.21 674.81 6.71 CIRC
+cp
+f
+N
+742.89 660.68 6.71 CIRC
+cp
+f
+N
+743.58 677.25 6.71 CIRC
+cp
+f
+N
+744.26 679.01 6.71 CIRC
+cp
+f
+N
+744.95 668.85 6.71 CIRC
+cp
+f
+N
+745.63 679.28 6.71 CIRC
+cp
+f
+N
+746.32 667.95 6.71 CIRC
+cp
+f
+N
+747 676 6.71 CIRC
+cp
+f
+N
+747.69 677.67 6.71 CIRC
+cp
+f
+N
+749.06 672.21 6.71 CIRC
+cp
+f
+N
+749.74 678.08 6.71 CIRC
+cp
+f
+N
+750.43 669.06 6.71 CIRC
+cp
+f
+N
+751.11 662.41 6.71 CIRC
+cp
+f
+N
+751.8 667.74 6.71 CIRC
+cp
+f
+N
+752.49 662.02 6.71 CIRC
+cp
+f
+N
+753.17 678.88 6.71 CIRC
+cp
+f
+N
+753.86 673.75 6.71 CIRC
+cp
+f
+N
+754.54 661.86 6.71 CIRC
+cp
+f
+N
+755.23 678.8 6.71 CIRC
+cp
+f
+N
+755.91 679.6 6.71 CIRC
+cp
+f
+N
+756.6 677.77 6.71 CIRC
+cp
+f
+N
+757.28 653.74 6.71 CIRC
+cp
+f
+N
+757.97 672.48 6.71 CIRC
+cp
+f
+N
+760.02 668.88 6.71 CIRC
+cp
+f
+N
+760.71 676.61 6.71 CIRC
+cp
+f
+N
+761.39 678.21 6.71 CIRC
+cp
+f
+N
+762.08 658.78 6.71 CIRC
+cp
+f
+N
+762.77 676.92 6.71 CIRC
+cp
+f
+N
+763.45 657.28 6.71 CIRC
+cp
+f
+N
+764.14 676.85 6.71 CIRC
+cp
+f
+N
+766.19 658.28 6.71 CIRC
+cp
+f
+N
+768.25 670.7 6.71 CIRC
+cp
+f
+N
+768.93 679.1 6.71 CIRC
+cp
+f
+N
+769.62 677.63 6.71 CIRC
+cp
+f
+N
+770.3 668.23 6.71 CIRC
+cp
+f
+N
+770.99 648.66 6.71 CIRC
+cp
+f
+N
+771.67 676.22 6.71 CIRC
+cp
+f
+N
+773.05 672.15 6.71 CIRC
+cp
+f
+N
+773.73 672.05 6.71 CIRC
+cp
+f
+N
+774.42 678.17 6.71 CIRC
+cp
+f
+N
+775.79 679.5 6.71 CIRC
+cp
+f
+N
+776.47 674.53 6.71 CIRC
+cp
+f
+N
+777.16 651.43 6.71 CIRC
+cp
+f
+N
+777.84 660.37 6.71 CIRC
+cp
+f
+N
+778.53 677.89 6.71 CIRC
+cp
+f
+N
+779.21 675.24 6.71 CIRC
+cp
+f
+N
+779.9 677.74 6.71 CIRC
+cp
+f
+N
+780.58 658.15 6.71 CIRC
+cp
+f
+N
+781.95 641.99 6.71 CIRC
+cp
+f
+N
+782.64 678.37 6.71 CIRC
+cp
+f
+N
+783.33 663.11 6.71 CIRC
+cp
+f
+N
+784.01 673.82 6.71 CIRC
+cp
+f
+N
+784.7 675 6.71 CIRC
+cp
+f
+N
+785.38 677.61 6.71 CIRC
+cp
+f
+N
+786.07 665.94 6.71 CIRC
+cp
+f
+N
+786.75 677.82 6.71 CIRC
+cp
+f
+N
+787.44 666.39 6.71 CIRC
+cp
+f
+N
+788.12 649.3 6.71 CIRC
+cp
+f
+N
+789.49 673.41 6.71 CIRC
+cp
+f
+N
+792.23 671.85 6.71 CIRC
+cp
+f
+N
+792.92 675.01 6.71 CIRC
+cp
+f
+N
+794.29 675.68 6.71 CIRC
+cp
+f
+N
+794.98 653.05 6.71 CIRC
+cp
+f
+N
+795.66 665.96 6.71 CIRC
+cp
+f
+N
+796.35 668.14 6.71 CIRC
+cp
+f
+N
+797.03 667.19 6.71 CIRC
+cp
+f
+N
+797.72 678.48 6.71 CIRC
+cp
+f
+N
+798.4 673.69 6.71 CIRC
+cp
+f
+N
+799.09 679.27 6.71 CIRC
+cp
+f
+N
+800.46 677.93 6.71 CIRC
+cp
+f
+N
+801.14 671.53 6.71 CIRC
+cp
+f
+N
+801.83 679.1 6.71 CIRC
+cp
+f
+N
+802.51 677.91 6.71 CIRC
+cp
+f
+N
+803.89 677.01 6.71 CIRC
+cp
+f
+N
+804.57 670.44 6.71 CIRC
+cp
+f
+N
+805.26 674.09 6.71 CIRC
+cp
+f
+N
+805.94 679.04 6.71 CIRC
+cp
+f
+N
+806.63 678.81 6.71 CIRC
+cp
+f
+N
+807.31 679.38 6.71 CIRC
+cp
+f
+N
+808 674.39 6.71 CIRC
+cp
+f
+N
+808.68 679.41 6.71 CIRC
+cp
+f
+N
+809.37 678.19 6.71 CIRC
+cp
+f
+N
+810.74 675.04 6.71 CIRC
+cp
+f
+N
+812.11 678.14 6.71 CIRC
+cp
+f
+N
+812.79 664.66 6.71 CIRC
+cp
+f
+N
+813.48 666.05 6.71 CIRC
+cp
+f
+N
+814.17 677.04 6.71 CIRC
+cp
+f
+N
+814.85 655.9 6.71 CIRC
+cp
+f
+N
+815.54 670.89 6.71 CIRC
+cp
+f
+N
+816.22 678.74 6.71 CIRC
+cp
+f
+N
+816.91 675.56 6.71 CIRC
+cp
+f
+N
+818.96 674.85 6.71 CIRC
+cp
+f
+N
+819.65 679.04 6.71 CIRC
+cp
+f
+N
+820.33 670.37 6.71 CIRC
+cp
+f
+N
+821.02 670.57 6.71 CIRC
+cp
+f
+N
+821.7 674.47 6.71 CIRC
+cp
+f
+N
+822.39 663.4 6.71 CIRC
+cp
+f
+N
+823.07 672.53 6.71 CIRC
+cp
+f
+N
+824.45 677.58 6.71 CIRC
+cp
+f
+N
+825.13 645.1 6.71 CIRC
+cp
+f
+N
+826.5 658.2 6.71 CIRC
+cp
+f
+N
+827.87 667.77 6.71 CIRC
+cp
+f
+N
+828.56 674.28 6.71 CIRC
+cp
+f
+N
+829.24 679.09 6.71 CIRC
+cp
+f
+N
+830.61 677.58 6.71 CIRC
+cp
+f
+N
+831.3 674.79 6.71 CIRC
+cp
+f
+N
+831.98 678.42 6.71 CIRC
+cp
+f
+N
+833.35 674.96 6.71 CIRC
+cp
+f
+N
+834.04 677.71 6.71 CIRC
+cp
+f
+N
+834.73 678.98 6.71 CIRC
+cp
+f
+N
+835.41 675.35 6.71 CIRC
+cp
+f
+N
+836.1 678.59 6.71 CIRC
+cp
+f
+N
+837.47 657.3 6.71 CIRC
+cp
+f
+N
+838.15 675.85 6.71 CIRC
+cp
+f
+N
+838.84 648.7 6.71 CIRC
+cp
+f
+N
+839.52 659.13 6.71 CIRC
+cp
+f
+N
+840.21 663.01 6.71 CIRC
+cp
+f
+N
+840.89 667.15 6.71 CIRC
+cp
+f
+N
+841.58 650.88 6.71 CIRC
+cp
+f
+N
+842.26 657.23 6.71 CIRC
+cp
+f
+N
+842.95 679.38 6.71 CIRC
+cp
+f
+N
+844.32 678.69 6.71 CIRC
+cp
+f
+N
+845.01 679.44 6.71 CIRC
+cp
+f
+N
+845.69 658.41 6.71 CIRC
+cp
+f
+N
+846.38 673.71 6.71 CIRC
+cp
+f
+N
+847.06 671.1 6.71 CIRC
+cp
+f
+N
+847.75 671.51 6.71 CIRC
+cp
+f
+N
+848.43 671.09 6.71 CIRC
+cp
+f
+N
+849.12 658.83 6.71 CIRC
+cp
+f
+N
+849.8 678.63 6.71 CIRC
+cp
+f
+N
+850.49 649.25 6.71 CIRC
+cp
+f
+N
+851.86 673.54 6.71 CIRC
+cp
+f
+N
+852.54 658 6.71 CIRC
+cp
+f
+N
+853.23 669.78 6.71 CIRC
+cp
+f
+N
+853.91 676.39 6.71 CIRC
+cp
+f
+N
+855.29 658.5 6.71 CIRC
+cp
+f
+N
+855.97 660.28 6.71 CIRC
+cp
+f
+N
+856.66 675.49 6.71 CIRC
+cp
+f
+N
+858.03 670.5 6.71 CIRC
+cp
+f
+N
+858.71 662.09 6.71 CIRC
+cp
+f
+N
+859.4 642.98 6.71 CIRC
+cp
+f
+N
+860.08 678.1 6.71 CIRC
+cp
+f
+N
+860.77 673.36 6.71 CIRC
+cp
+f
+N
+861.45 666.96 6.71 CIRC
+cp
+f
+N
+862.14 661.59 6.71 CIRC
+cp
+f
+N
+862.82 665.94 6.71 CIRC
+cp
+f
+N
+863.51 643.85 6.71 CIRC
+cp
+f
+N
+864.19 666.97 6.71 CIRC
+cp
+f
+N
+864.88 665.89 6.71 CIRC
+cp
+f
+N
+866.25 673.99 6.71 CIRC
+cp
+f
+N
+866.94 679.36 6.71 CIRC
+cp
+f
+N
+867.62 664.99 6.71 CIRC
+cp
+f
+N
+868.31 675.03 6.71 CIRC
+cp
+f
+N
+868.99 678.29 6.71 CIRC
+cp
+f
+N
+869.68 677.31 6.71 CIRC
+cp
+f
+N
+870.36 675.47 6.71 CIRC
+cp
+f
+N
+871.05 668.79 6.71 CIRC
+cp
+f
+N
+871.73 675.6 6.71 CIRC
+cp
+f
+N
+872.42 654.27 6.71 CIRC
+cp
+f
+N
+873.1 677.18 6.71 CIRC
+cp
+f
+N
+873.79 673.75 6.71 CIRC
+cp
+f
+N
+874.47 658.66 6.71 CIRC
+cp
+f
+N
+875.16 675.44 6.71 CIRC
+cp
+f
+N
+875.85 675.18 6.71 CIRC
+cp
+f
+N
+876.53 665.15 6.71 CIRC
+cp
+f
+N
+877.22 665.43 6.71 CIRC
+cp
+f
+N
+879.27 673.38 6.71 CIRC
+cp
+f
+N
+879.96 676.38 6.71 CIRC
+cp
+f
+N
+880.64 665.81 6.71 CIRC
+cp
+f
+N
+882.01 679.98 6.71 CIRC
+cp
+f
+N
+883.38 672.38 6.71 CIRC
+cp
+f
+N
+884.07 679.84 6.71 CIRC
+cp
+f
+N
+884.75 657.17 6.71 CIRC
+cp
+f
+N
+885.44 668.24 6.71 CIRC
+cp
+f
+N
+886.13 671.73 6.71 CIRC
+cp
+f
+N
+886.81 660.64 6.71 CIRC
+cp
+f
+N
+887.5 657.06 6.71 CIRC
+cp
+f
+N
+889.55 676.14 6.71 CIRC
+cp
+f
+N
+890.24 646.83 6.71 CIRC
+cp
+f
+N
+890.92 673.56 6.71 CIRC
+cp
+f
+N
+891.61 652.74 6.71 CIRC
+cp
+f
+N
+892.29 666.31 6.71 CIRC
+cp
+f
+N
+893.66 676.92 6.71 CIRC
+cp
+f
+N
+894.35 672.58 6.71 CIRC
+cp
+f
+N
+895.03 665.66 6.71 CIRC
+cp
+f
+N
+895.72 656.76 6.71 CIRC
+cp
+f
+N
+896.41 677.37 6.71 CIRC
+cp
+f
+N
+897.09 671.84 6.71 CIRC
+cp
+f
+N
+898.46 670.67 6.71 CIRC
+cp
+f
+N
+899.83 644.37 6.71 CIRC
+cp
+f
+N
+900.52 665.48 6.71 CIRC
+cp
+f
+N
+901.2 678.91 6.71 CIRC
+cp
+f
+N
+901.89 671.51 6.71 CIRC
+cp
+f
+N
+902.57 677.41 6.71 CIRC
+cp
+f
+N
+903.26 673.82 6.71 CIRC
+cp
+f
+N
+903.94 641.9 6.71 CIRC
+cp
+f
+N
+904.63 677.06 6.71 CIRC
+cp
+f
+N
+905.31 677.27 6.71 CIRC
+cp
+f
+N
+906.69 675.34 6.71 CIRC
+cp
+f
+N
+907.37 662.32 6.71 CIRC
+cp
+f
+N
+908.06 677.85 6.71 CIRC
+cp
+f
+N
+908.74 676.03 6.71 CIRC
+cp
+f
+N
+909.43 675.53 6.71 CIRC
+cp
+f
+N
+910.11 677.64 6.71 CIRC
+cp
+f
+N
+910.8 657.07 6.71 CIRC
+cp
+f
+N
+911.48 650.66 6.71 CIRC
+cp
+f
+N
+912.17 677.19 6.71 CIRC
+cp
+f
+N
+913.54 678.28 6.71 CIRC
+cp
+f
+N
+914.22 677.31 6.71 CIRC
+cp
+f
+N
+914.91 676.75 6.71 CIRC
+cp
+f
+N
+915.59 662.5 6.71 CIRC
+cp
+f
+N
+916.28 677.71 6.71 CIRC
+cp
+f
+N
+916.97 671.35 6.71 CIRC
+cp
+f
+N
+917.65 673.31 6.71 CIRC
+cp
+f
+N
+918.34 650.38 6.71 CIRC
+cp
+f
+N
+919.02 674.33 6.71 CIRC
+cp
+f
+N
+919.71 669.29 6.71 CIRC
+cp
+f
+N
+920.39 677.34 6.71 CIRC
+cp
+f
+N
+921.08 679.34 6.71 CIRC
+cp
+f
+N
+921.76 672.76 6.71 CIRC
+cp
+f
+N
+922.45 643.57 6.71 CIRC
+cp
+f
+N
+923.13 671.31 6.71 CIRC
+cp
+f
+N
+923.82 677.64 6.71 CIRC
+cp
+f
+N
+924.5 655.08 6.71 CIRC
+cp
+f
+N
+925.19 674.32 6.71 CIRC
+cp
+f
+N
+925.87 659 6.71 CIRC
+cp
+f
+N
+926.56 679.42 6.71 CIRC
+cp
+f
+N
+927.25 652.37 6.71 CIRC
+cp
+f
+N
+927.93 666.78 6.71 CIRC
+cp
+f
+N
+928.62 650.5 6.71 CIRC
+cp
+f
+N
+929.3 677.71 6.71 CIRC
+cp
+f
+N
+929.99 663.95 6.71 CIRC
+cp
+f
+N
+931.36 673.86 6.71 CIRC
+cp
+f
+N
+932.04 659.66 6.71 CIRC
+cp
+f
+N
+932.73 671.83 6.71 CIRC
+cp
+f
+N
+933.41 679.54 6.71 CIRC
+cp
+f
+N
+934.1 678.2 6.71 CIRC
+cp
+f
+N
+934.78 643.43 6.71 CIRC
+cp
+f
+N
+936.15 679.17 6.71 CIRC
+cp
+f
+N
+936.84 663.56 6.71 CIRC
+cp
+f
+N
+937.53 678.66 6.71 CIRC
+cp
+f
+N
+938.9 662.04 6.71 CIRC
+cp
+f
+N
+939.58 650.48 6.71 CIRC
+cp
+f
+N
+940.27 656.44 6.71 CIRC
+cp
+f
+N
+940.95 677.47 6.71 CIRC
+cp
+f
+N
+941.64 644.8 6.71 CIRC
+cp
+f
+N
+943.01 654.66 6.71 CIRC
+cp
+f
+N
+943.69 658.46 6.71 CIRC
+cp
+f
+N
+944.38 678.28 6.71 CIRC
+cp
+f
+N
+945.06 679.82 6.71 CIRC
+cp
+f
+N
+945.75 673.16 6.71 CIRC
+cp
+f
+N
+946.43 669.11 6.71 CIRC
+cp
+f
+N
+947.12 664.89 6.71 CIRC
+cp
+f
+N
+947.81 679.77 6.71 CIRC
+cp
+f
+N
+948.49 673 6.71 CIRC
+cp
+f
+N
+949.86 661.75 6.71 CIRC
+cp
+f
+N
+950.55 678.18 6.71 CIRC
+cp
+f
+N
+951.23 652.23 6.71 CIRC
+cp
+f
+N
+951.92 650.55 6.71 CIRC
+cp
+f
+N
+952.6 647.49 6.71 CIRC
+cp
+f
+N
+953.29 662.64 6.71 CIRC
+cp
+f
+N
+954.66 668.84 6.71 CIRC
+cp
+f
+N
+955.34 678.92 6.71 CIRC
+cp
+f
+N
+956.03 677.88 6.71 CIRC
+cp
+f
+N
+956.71 669.27 6.71 CIRC
+cp
+f
+N
+957.4 653.07 6.71 CIRC
+cp
+f
+N
+958.09 660.96 6.71 CIRC
+cp
+f
+N
+958.77 676.7 6.71 CIRC
+cp
+f
+N
+959.46 649.68 6.71 CIRC
+cp
+f
+N
+960.14 677.96 6.71 CIRC
+cp
+f
+N
+960.83 677.6 6.71 CIRC
+cp
+f
+N
+961.51 672.89 6.71 CIRC
+cp
+f
+N
+962.2 662.52 6.71 CIRC
+cp
+f
+N
+962.88 666.07 6.71 CIRC
+cp
+f
+N
+963.57 677.45 6.71 CIRC
+cp
+f
+N
+964.25 678.83 6.71 CIRC
+cp
+f
+N
+964.94 679.35 6.71 CIRC
+cp
+f
+N
+966.31 671.98 6.71 CIRC
+cp
+f
+N
+966.99 673.29 6.71 CIRC
+cp
+f
+N
+967.68 673.94 6.71 CIRC
+cp
+f
+N
+969.05 678.54 6.71 CIRC
+cp
+f
+N
+969.74 655.6 6.71 CIRC
+cp
+f
+N
+971.11 676.62 6.71 CIRC
+cp
+f
+N
+971.79 661.78 6.71 CIRC
+cp
+f
+N
+972.48 658.38 6.71 CIRC
+cp
+f
+N
+973.85 679.07 6.71 CIRC
+cp
+f
+N
+974.53 644.91 6.71 CIRC
+cp
+f
+N
+975.22 669.86 6.71 CIRC
+cp
+f
+N
+975.9 673.61 6.71 CIRC
+cp
+f
+N
+976.59 672.6 6.71 CIRC
+cp
+f
+N
+977.27 657.84 6.71 CIRC
+cp
+f
+N
+977.96 679.58 6.71 CIRC
+cp
+f
+N
+978.65 677.64 6.71 CIRC
+cp
+f
+N
+979.33 649.58 6.71 CIRC
+cp
+f
+N
+980.02 653.1 6.71 CIRC
+cp
+f
+N
+981.39 660.41 6.71 CIRC
+cp
+f
+N
+982.07 672.76 6.71 CIRC
+cp
+f
+N
+982.76 676.79 6.71 CIRC
+cp
+f
+N
+983.44 657.12 6.71 CIRC
+cp
+f
+N
+984.13 669.61 6.71 CIRC
+cp
+f
+N
+984.81 677.99 6.71 CIRC
+cp
+f
+N
+985.5 676.55 6.71 CIRC
+cp
+f
+N
+987.55 674.89 6.71 CIRC
+cp
+f
+N
+988.24 674.72 6.71 CIRC
+cp
+f
+N
+988.93 676.1 6.71 CIRC
+cp
+f
+N
+989.61 676.12 6.71 CIRC
+cp
+f
+N
+990.3 642.59 6.71 CIRC
+cp
+f
+N
+990.98 678.5 6.71 CIRC
+cp
+f
+N
+992.35 679.51 6.71 CIRC
+cp
+f
+N
+993.04 659.42 6.71 CIRC
+cp
+f
+N
+993.72 678.59 6.71 CIRC
+cp
+f
+N
+994.41 677.32 6.71 CIRC
+cp
+f
+N
+995.09 667.37 6.71 CIRC
+cp
+f
+N
+995.78 674.26 6.71 CIRC
+cp
+f
+N
+997.15 678.91 6.71 CIRC
+cp
+f
+N
+997.83 655.32 6.71 CIRC
+cp
+f
+N
+998.52 678.85 6.71 CIRC
+cp
+f
+N
+999.21 669.17 6.71 CIRC
+cp
+f
+N
+999.89 674.48 6.71 CIRC
+cp
+f
+N
+1001.26 644.11 6.71 CIRC
+cp
+f
+N
+1001.95 660.16 6.71 CIRC
+cp
+f
+N
+1002.63 679.25 6.71 CIRC
+cp
+f
+N
+1003.32 676.05 6.71 CIRC
+cp
+f
+N
+1004 658.26 6.71 CIRC
+cp
+f
+N
+1004.69 643.67 6.71 CIRC
+cp
+f
+N
+1005.37 679.71 6.71 CIRC
+cp
+f
+N
+1006.06 672.09 6.71 CIRC
+cp
+f
+N
+1007.43 674.34 6.71 CIRC
+cp
+f
+N
+1008.11 664.29 6.71 CIRC
+cp
+f
+N
+1008.8 670.16 6.71 CIRC
+cp
+f
+N
+1009.49 674.48 6.71 CIRC
+cp
+f
+N
+1010.17 662.84 6.71 CIRC
+cp
+f
+N
+1010.86 659.66 6.71 CIRC
+cp
+f
+N
+1012.23 678.13 6.71 CIRC
+cp
+f
+N
+1012.91 674.14 6.71 CIRC
+cp
+f
+N
+1013.6 661.5 6.71 CIRC
+cp
+f
+N
+1014.28 679.43 6.71 CIRC
+cp
+f
+N
+1014.97 647.94 6.71 CIRC
+cp
+f
+N
+1016.34 677.07 6.71 CIRC
+cp
+f
+N
+1017.02 677.03 6.71 CIRC
+cp
+f
+N
+1017.71 644.31 6.71 CIRC
+cp
+f
+N
+1018.39 664.52 6.71 CIRC
+cp
+f
+N
+1019.08 647.01 6.71 CIRC
+cp
+f
+N
+1019.77 674.06 6.71 CIRC
+cp
+f
+N
+1020.45 677.54 6.71 CIRC
+cp
+f
+N
+1021.14 666.56 6.71 CIRC
+cp
+f
+N
+1022.51 675.32 6.71 CIRC
+cp
+f
+N
+1023.19 672.7 6.71 CIRC
+cp
+f
+N
+1023.88 672.22 6.71 CIRC
+cp
+f
+N
+1024.56 657.97 6.71 CIRC
+cp
+f
+N
+1025.25 645.59 6.71 CIRC
+cp
+f
+N
+1025.93 655.26 6.71 CIRC
+cp
+f
+N
+1026.62 675.95 6.71 CIRC
+cp
+f
+N
+1027.3 671.29 6.71 CIRC
+cp
+f
+N
+1027.99 647.01 6.71 CIRC
+cp
+f
+N
+1028.67 659.66 6.71 CIRC
+cp
+f
+N
+1030.05 664.85 6.71 CIRC
+cp
+f
+N
+1031.42 676.16 6.71 CIRC
+cp
+f
+N
+1032.1 648.02 6.71 CIRC
+cp
+f
+N
+1032.79 679.67 6.71 CIRC
+cp
+f
+N
+1033.47 678.13 6.71 CIRC
+cp
+f
+N
+1034.84 676.14 6.71 CIRC
+cp
+f
+N
+1035.53 659.62 6.71 CIRC
+cp
+f
+N
+1036.21 665.44 6.71 CIRC
+cp
+f
+N
+1036.9 661.4 6.71 CIRC
+cp
+f
+N
+1037.58 668 6.71 CIRC
+cp
+f
+N
+1038.27 673.19 6.71 CIRC
+cp
+f
+N
+1038.95 651.39 6.71 CIRC
+cp
+f
+N
+1039.64 675.34 6.71 CIRC
+cp
+f
+N
+1040.33 671.64 6.71 CIRC
+cp
+f
+N
+1041.01 677.84 6.71 CIRC
+cp
+f
+N
+1041.7 661.59 6.71 CIRC
+cp
+f
+N
+1042.38 679.54 6.71 CIRC
+cp
+f
+N
+1043.07 675.21 6.71 CIRC
+cp
+f
+N
+1043.75 651.54 6.71 CIRC
+cp
+f
+N
+1044.44 669.78 6.71 CIRC
+cp
+f
+N
+1045.81 672.89 6.71 CIRC
+cp
+f
+N
+1047.18 677.63 6.71 CIRC
+cp
+f
+N
+1047.86 665.18 6.71 CIRC
+cp
+f
+N
+1049.23 679.28 6.71 CIRC
+cp
+f
+N
+1049.92 674.22 6.71 CIRC
+cp
+f
+N
+1050.61 659.23 6.71 CIRC
+cp
+f
+N
+1051.29 678.1 6.71 CIRC
+cp
+f
+N
+1051.98 662.6 6.71 CIRC
+cp
+f
+N
+1052.66 675.23 6.71 CIRC
+cp
+f
+N
+1053.35 658.76 6.71 CIRC
+cp
+f
+N
+1054.72 661.94 6.71 CIRC
+cp
+f
+N
+1055.4 678.69 6.71 CIRC
+cp
+f
+N
+1057.46 652.77 6.71 CIRC
+cp
+f
+N
+1058.14 676.39 6.71 CIRC
+cp
+f
+N
+1058.83 659.86 6.71 CIRC
+cp
+f
+N
+1059.51 679.78 6.71 CIRC
+cp
+f
+N
+1060.2 679.02 6.71 CIRC
+cp
+f
+N
+1060.89 656.07 6.71 CIRC
+cp
+f
+N
+1061.57 679.25 6.71 CIRC
+cp
+f
+N
+1062.26 648.52 6.71 CIRC
+cp
+f
+N
+1062.94 670.8 6.71 CIRC
+cp
+f
+N
+1063.63 678.26 6.71 CIRC
+cp
+f
+N
+1064.31 673.52 6.71 CIRC
+cp
+f
+N
+1065.68 677.72 6.71 CIRC
+cp
+f
+N
+1066.37 670.39 6.71 CIRC
+cp
+f
+N
+1067.05 674.55 6.71 CIRC
+cp
+f
+N
+1067.74 678.2 6.71 CIRC
+cp
+f
+N
+1068.42 675.96 6.71 CIRC
+cp
+f
+N
+1069.11 654.25 6.71 CIRC
+cp
+f
+N
+1069.79 670.58 6.71 CIRC
+cp
+f
+N
+1070.48 646.38 6.71 CIRC
+cp
+f
+N
+1071.17 660.78 6.71 CIRC
+cp
+f
+N
+1071.85 678.03 6.71 CIRC
+cp
+f
+N
+1072.54 673.21 6.71 CIRC
+cp
+f
+N
+1073.22 678.84 6.71 CIRC
+cp
+f
+N
+1073.91 678.8 6.71 CIRC
+cp
+f
+N
+1074.59 673.86 6.71 CIRC
+cp
+f
+N
+1075.96 669.05 6.71 CIRC
+cp
+f
+N
+1077.33 677.32 6.71 CIRC
+cp
+f
+N
+1078.02 667.98 6.71 CIRC
+cp
+f
+N
+1078.7 672.21 6.71 CIRC
+cp
+f
+N
+1079.39 658.77 6.71 CIRC
+cp
+f
+N
+1080.07 657.7 6.71 CIRC
+cp
+f
+N
+1080.76 651.61 6.71 CIRC
+cp
+f
+N
+1081.45 677.36 6.71 CIRC
+cp
+f
+N
+1082.13 671.78 6.71 CIRC
+cp
+f
+N
+1082.82 643.07 6.71 CIRC
+cp
+f
+N
+1084.19 666.21 6.71 CIRC
+cp
+f
+N
+1084.87 671.21 6.71 CIRC
+cp
+f
+N
+1085.56 660.59 6.71 CIRC
+cp
+f
+N
+1086.24 678.65 6.71 CIRC
+cp
+f
+N
+1086.93 678.47 6.71 CIRC
+cp
+f
+N
+1087.61 676.9 6.71 CIRC
+cp
+f
+N
+1088.3 650.05 6.71 CIRC
+cp
+f
+N
+1088.98 676.37 6.71 CIRC
+cp
+f
+N
+1089.67 668.46 6.71 CIRC
+cp
+f
+N
+1090.35 664.67 6.71 CIRC
+cp
+f
+N
+1091.04 678.09 6.71 CIRC
+cp
+f
+N
+1091.73 677.48 6.71 CIRC
+cp
+f
+N
+1092.41 678.66 6.71 CIRC
+cp
+f
+N
+1094.47 675.18 6.71 CIRC
+cp
+f
+N
+1095.15 657.42 6.71 CIRC
+cp
+f
+N
+1095.84 651.94 6.71 CIRC
+cp
+f
+N
+1096.52 663.38 6.71 CIRC
+cp
+f
+N
+1097.21 676.26 6.71 CIRC
+cp
+f
+N
+1097.89 677.91 6.71 CIRC
+cp
+f
+N
+1098.58 666.9 6.71 CIRC
+cp
+f
+N
+1099.26 661.64 6.71 CIRC
+cp
+f
+N
+1099.95 678.66 6.71 CIRC
+cp
+f
+N
+1101.32 675.78 6.71 CIRC
+cp
+f
+N
+1102.01 670.44 6.71 CIRC
+cp
+f
+N
+1103.38 679.53 6.71 CIRC
+cp
+f
+N
+1104.06 665.66 6.71 CIRC
+cp
+f
+N
+1104.75 662.55 6.71 CIRC
+cp
+f
+N
+1105.43 657.19 6.71 CIRC
+cp
+f
+N
+1106.12 670.08 6.71 CIRC
+cp
+f
+N
+1106.8 664 6.71 CIRC
+cp
+f
+N
+1107.49 678.3 6.71 CIRC
+cp
+f
+N
+1108.17 670.86 6.71 CIRC
+cp
+f
+N
+1109.54 678.04 6.71 CIRC
+cp
+f
+N
+1110.23 678.32 6.71 CIRC
+cp
+f
+N
+1110.91 669.93 6.71 CIRC
+cp
+f
+N
+1111.6 674.74 6.71 CIRC
+cp
+f
+N
+1112.29 672.98 6.71 CIRC
+cp
+f
+N
+1112.97 672.59 6.71 CIRC
+cp
+f
+N
+1113.66 674.92 6.71 CIRC
+cp
+f
+N
+1114.34 673.61 6.71 CIRC
+cp
+f
+N
+1115.03 674.86 6.71 CIRC
+cp
+f
+N
+1115.71 664.05 6.71 CIRC
+cp
+f
+N
+1116.4 659.34 6.71 CIRC
+cp
+f
+N
+1117.08 677.89 6.71 CIRC
+cp
+f
+N
+1117.77 676.33 6.71 CIRC
+cp
+f
+N
+1118.45 671.63 6.71 CIRC
+cp
+f
+N
+1119.14 666.44 6.71 CIRC
+cp
+f
+N
+1119.82 669.38 6.71 CIRC
+cp
+f
+N
+1120.51 679 6.71 CIRC
+cp
+f
+N
+1121.19 671.96 6.71 CIRC
+cp
+f
+N
+1121.88 675.67 6.71 CIRC
+cp
+f
+N
+1122.57 670.13 6.71 CIRC
+cp
+f
+N
+1123.25 678.7 6.71 CIRC
+cp
+f
+N
+1123.94 676.92 6.71 CIRC
+cp
+f
+N
+1125.31 656.08 6.71 CIRC
+cp
+f
+N
+1125.99 677.78 6.71 CIRC
+cp
+f
+N
+1126.68 660.83 6.71 CIRC
+cp
+f
+N
+1127.36 666.67 6.71 CIRC
+cp
+f
+N
+1128.05 671.83 6.71 CIRC
+cp
+f
+N
+1128.73 670.08 6.71 CIRC
+cp
+f
+N
+1130.1 677.69 6.71 CIRC
+cp
+f
+N
+1131.47 677.32 6.71 CIRC
+cp
+f
+N
+1132.16 675.13 6.71 CIRC
+cp
+f
+N
+1132.85 660.81 6.71 CIRC
+cp
+f
+N
+1133.53 676.69 6.71 CIRC
+cp
+f
+N
+1134.22 677.16 6.71 CIRC
+cp
+f
+N
+1134.9 667.57 6.71 CIRC
+cp
+f
+N
+1135.59 675.1 6.71 CIRC
+cp
+f
+N
+1136.27 676.83 6.71 CIRC
+cp
+f
+N
+1136.96 677.4 6.71 CIRC
+cp
+f
+N
+1137.64 674.19 6.71 CIRC
+cp
+f
+N
+1138.33 671.33 6.71 CIRC
+cp
+f
+N
+1139.01 665.76 6.71 CIRC
+cp
+f
+N
+1139.7 676.23 6.71 CIRC
+cp
+f
+N
+1140.38 679.73 6.71 CIRC
+cp
+f
+N
+1141.07 678.59 6.71 CIRC
+cp
+f
+N
+1141.75 661.96 6.71 CIRC
+cp
+f
+N
+1143.13 664.76 6.71 CIRC
+cp
+f
+N
+1143.81 663.02 6.71 CIRC
+cp
+f
+N
+1144.5 647.34 6.71 CIRC
+cp
+f
+N
+1145.18 656.9 6.71 CIRC
+cp
+f
+N
+1145.87 676.54 6.71 CIRC
+cp
+f
+N
+1146.55 673.43 6.71 CIRC
+cp
+f
+N
+1147.24 678.93 6.71 CIRC
+cp
+f
+N
+1147.92 674.31 6.71 CIRC
+cp
+f
+N
+1148.61 669.55 6.71 CIRC
+cp
+f
+N
+1149.98 674.85 6.71 CIRC
+cp
+f
+N
+1150.66 671.1 6.71 CIRC
+cp
+f
+N
+1151.35 671.75 6.71 CIRC
+cp
+f
+N
+1152.03 678.14 6.71 CIRC
+cp
+f
+N
+1152.72 663.12 6.71 CIRC
+cp
+f
+N
+1154.09 660.51 6.71 CIRC
+cp
+f
+N
+1154.78 658.34 6.71 CIRC
+cp
+f
+N
+1155.46 645.41 6.71 CIRC
+cp
+f
+N
+1156.15 675.09 6.71 CIRC
+cp
+f
+N
+1156.83 658.02 6.71 CIRC
+cp
+f
+N
+1157.52 641.77 6.71 CIRC
+cp
+f
+N
+1158.2 645.12 6.71 CIRC
+cp
+f
+N
+1159.57 668.28 6.71 CIRC
+cp
+f
+N
+1160.26 662.59 6.71 CIRC
+cp
+f
+N
+1160.94 669.29 6.71 CIRC
+cp
+f
+4.00 0 0 [] 0 0.96 0.47 0.16 LAR
+142.2 589.54 1 129.17 576.51 DL
+142.2 576.51 1 129.17 589.54 DL
+144.95 607.6 1 131.91 594.56 DL
+144.95 594.56 1 131.91 607.6 DL
+145.63 571.32 1 132.59 558.28 DL
+145.63 558.28 1 132.59 571.32 DL
+146.32 632.58 1 133.28 619.54 DL
+146.32 619.54 1 133.28 632.58 DL
+152.48 644.6 1 139.45 631.56 DL
+152.48 631.56 1 139.45 644.6 DL
+154.54 644.15 1 141.5 631.11 DL
+154.54 631.11 1 141.5 644.15 DL
+155.23 523.62 1 142.19 510.58 DL
+155.23 510.58 1 142.19 523.62 DL
+158.65 607.12 1 145.61 594.08 DL
+158.65 594.08 1 145.61 607.12 DL
+159.34 501.9 1 146.3 488.86 DL
+159.34 488.86 1 146.3 501.9 DL
+166.88 630.42 1 153.84 617.38 DL
+166.88 617.38 1 153.84 630.42 DL
+167.56 648.18 1 154.52 635.14 DL
+167.56 635.14 1 154.52 648.18 DL
+173.04 642.79 1 160.01 629.75 DL
+173.04 629.75 1 160.01 642.79 DL
+185.38 609.88 1 172.34 596.85 DL
+185.38 596.85 1 172.34 609.88 DL
+186.07 638.16 1 173.03 625.12 DL
+186.07 625.12 1 173.03 638.16 DL
+187.44 566.41 1 174.4 553.37 DL
+187.44 553.37 1 174.4 566.41 DL
+192.23 463.12 1 179.2 450.08 DL
+192.23 450.08 1 179.2 463.12 DL
+196.35 584.45 1 183.31 571.42 DL
+196.35 571.42 1 183.31 584.45 DL
+200.46 60.43 1 187.42 47.39 DL
+200.46 47.39 1 187.42 60.43 DL
+206.63 642.75 1 193.59 629.71 DL
+206.63 629.71 1 193.59 642.75 DL
+212.79 635.46 1 199.76 622.42 DL
+212.79 622.42 1 199.76 635.46 DL
+213.48 459.79 1 200.44 446.75 DL
+213.48 446.75 1 200.44 459.79 DL
+216.91 639.33 1 203.87 626.29 DL
+216.91 626.29 1 203.87 639.33 DL
+221.02 229.8 1 207.98 216.76 DL
+221.02 216.76 1 207.98 229.8 DL
+222.39 635.51 1 209.35 622.47 DL
+222.39 622.47 1 209.35 635.51 DL
+223.07 643.29 1 210.04 630.26 DL
+223.07 630.26 1 210.04 643.29 DL
+225.13 614.03 1 212.09 600.99 DL
+225.13 600.99 1 212.09 614.03 DL
+229.24 643.74 1 216.2 630.7 DL
+229.24 630.7 1 216.2 643.74 DL
+233.35 647.94 1 220.32 634.9 DL
+233.35 634.9 1 220.32 647.94 DL
+236.78 516.09 1 223.74 503.06 DL
+236.78 503.06 1 223.74 516.09 DL
+238.15 623.45 1 225.11 610.41 DL
+238.15 610.41 1 225.11 623.45 DL
+238.84 646.41 1 225.8 633.37 DL
+238.84 633.37 1 225.8 646.41 DL
+243.63 639.6 1 230.6 626.56 DL
+243.63 626.56 1 230.6 639.6 DL
+247.06 640.49 1 234.02 627.45 DL
+247.06 627.45 1 234.02 640.49 DL
+249.12 584.69 1 236.08 571.65 DL
+249.12 571.65 1 236.08 584.69 DL
+250.49 639.23 1 237.45 626.19 DL
+250.49 626.19 1 237.45 639.23 DL
+254.6 644.64 1 241.56 631.6 DL
+254.6 631.6 1 241.56 644.64 DL
+256.66 631.36 1 243.62 618.33 DL
+256.66 618.33 1 243.62 631.36 DL
+264.19 594.52 1 251.16 581.48 DL
+264.19 581.48 1 251.16 594.52 DL
+271.73 646.34 1 258.69 633.3 DL
+271.73 633.3 1 258.69 646.34 DL
+278.59 609.41 1 265.55 596.37 DL
+278.59 596.37 1 265.55 609.41 DL
+282.7 619.9 1 269.66 606.86 DL
+282.7 606.86 1 269.66 619.9 DL
+283.38 467.15 1 270.34 454.11 DL
+283.38 454.11 1 270.34 467.15 DL
+286.81 615.9 1 273.77 602.86 DL
+286.81 602.86 1 273.77 615.9 DL
+291.61 627.93 1 278.57 614.9 DL
+291.61 614.9 1 278.57 627.93 DL
+295.72 647.89 1 282.68 634.85 DL
+295.72 634.85 1 282.68 647.89 DL
+297.78 647.96 1 284.74 634.92 DL
+297.78 634.92 1 284.74 647.96 DL
+312.85 441.39 1 299.81 428.35 DL
+312.85 428.35 1 299.81 441.39 DL
+322.45 577.84 1 309.41 564.8 DL
+322.45 564.8 1 309.41 577.84 DL
+327.93 618.81 1 314.89 605.77 DL
+327.93 605.77 1 314.89 618.81 DL
+331.36 646.81 1 318.32 633.77 DL
+331.36 633.77 1 318.32 646.81 DL
+333.41 412.7 1 320.37 399.66 DL
+333.41 399.66 1 320.37 412.7 DL
+335.47 644.58 1 322.43 631.54 DL
+335.47 631.54 1 322.43 644.58 DL
+337.52 635.65 1 324.49 622.61 DL
+337.52 622.61 1 324.49 635.65 DL
+343.01 626.29 1 329.97 613.26 DL
+343.01 613.26 1 329.97 626.29 DL
+353.29 595.04 1 340.25 582.01 DL
+353.29 582.01 1 340.25 595.04 DL
+358.08 596.51 1 345.05 583.48 DL
+358.08 583.48 1 345.05 596.51 DL
+360.14 623.13 1 347.1 610.09 DL
+360.14 610.09 1 347.1 623.13 DL
+365.62 631.52 1 352.58 618.48 DL
+365.62 618.48 1 352.58 631.52 DL
+366.31 629.65 1 353.27 616.61 DL
+366.31 616.61 1 353.27 629.65 DL
+371.11 642.46 1 358.07 629.42 DL
+371.11 629.42 1 358.07 642.46 DL
+375.22 646.86 1 362.18 633.82 DL
+375.22 633.82 1 362.18 646.86 DL
+387.55 573.67 1 374.52 560.64 DL
+387.55 560.64 1 374.52 573.67 DL
+392.35 632.98 1 379.31 619.94 DL
+392.35 619.94 1 379.31 632.98 DL
+393.04 640.89 1 380 627.85 DL
+393.04 627.85 1 380 640.89 DL
+409.48 491 1 396.45 477.96 DL
+409.48 477.96 1 396.45 491 DL
+411.54 523.99 1 398.5 510.95 DL
+411.54 510.95 1 398.5 523.99 DL
+418.39 642.97 1 405.36 629.93 DL
+418.39 629.93 1 405.36 642.97 DL
+419.08 633.12 1 406.04 620.08 DL
+419.08 620.08 1 406.04 633.12 DL
+420.45 640.55 1 407.41 627.51 DL
+420.45 627.51 1 407.41 640.55 DL
+423.88 467.5 1 410.84 454.46 DL
+423.88 454.46 1 410.84 467.5 DL
+427.99 601.74 1 414.95 588.7 DL
+427.99 588.7 1 414.95 601.74 DL
+429.36 637.71 1 416.32 624.67 DL
+429.36 624.67 1 416.32 637.71 DL
+430.04 602.18 1 417.01 589.14 DL
+430.04 589.14 1 417.01 602.18 DL
+431.42 623.13 1 418.38 610.09 DL
+431.42 610.09 1 418.38 623.13 DL
+433.47 643.26 1 420.43 630.22 DL
+433.47 630.22 1 420.43 643.26 DL
+436.21 642.55 1 423.17 629.51 DL
+436.21 629.51 1 423.17 642.55 DL
+452.66 610.45 1 439.62 597.41 DL
+452.66 597.41 1 439.62 610.45 DL
+453.35 625.52 1 440.31 612.48 DL
+453.35 612.48 1 440.31 625.52 DL
+456.09 313.37 1 443.05 300.33 DL
+456.09 300.33 1 443.05 313.37 DL
+459.51 646.12 1 446.48 633.08 DL
+459.51 633.08 1 446.48 646.12 DL
+463.63 640.42 1 450.59 627.38 DL
+463.63 627.38 1 450.59 640.42 DL
+465.68 431.6 1 452.64 418.56 DL
+465.68 418.56 1 452.64 431.6 DL
+467.74 644.39 1 454.7 631.35 DL
+467.74 631.35 1 454.7 644.39 DL
+470.48 614.23 1 457.44 601.19 DL
+470.48 601.19 1 457.44 614.23 DL
+473.91 611.25 1 460.87 598.21 DL
+473.91 598.21 1 460.87 611.25 DL
+478.7 633.91 1 465.66 620.88 DL
+478.7 620.88 1 465.66 633.91 DL
+481.44 645.29 1 468.41 632.25 DL
+481.44 632.25 1 468.41 645.29 DL
+482.82 535.68 1 469.78 522.64 DL
+482.82 522.64 1 469.78 535.68 DL
+488.3 624.89 1 475.26 611.85 DL
+488.3 611.85 1 475.26 624.89 DL
+492.41 629.4 1 479.37 616.36 DL
+492.41 616.36 1 479.37 629.4 DL
+497.89 638.5 1 484.85 625.47 DL
+497.89 625.47 1 484.85 638.5 DL
+504.75 629.68 1 491.71 616.65 DL
+504.75 616.65 1 491.71 629.68 DL
+505.43 628.73 1 492.39 615.69 DL
+505.43 615.69 1 492.39 628.73 DL
+506.8 626.69 1 493.76 613.65 DL
+506.8 613.65 1 493.76 626.69 DL
+507.49 87.23 1 494.45 74.19 DL
+507.49 74.19 1 494.45 87.23 DL
+515.71 531.59 1 502.67 518.55 DL
+515.71 518.55 1 502.67 531.59 DL
+520.51 531.72 1 507.47 518.68 DL
+520.51 518.68 1 507.47 531.72 DL
+521.19 619.45 1 508.16 606.41 DL
+521.19 606.41 1 508.16 619.45 DL
+522.56 280.24 1 509.53 267.2 DL
+522.56 267.2 1 509.53 280.24 DL
+537.64 638.54 1 524.6 625.5 DL
+537.64 625.5 1 524.6 638.54 DL
+542.44 611.33 1 529.4 598.29 DL
+542.44 598.29 1 529.4 611.33 DL
+543.12 628.53 1 530.09 615.49 DL
+543.12 615.49 1 530.09 628.53 DL
+547.24 594.38 1 534.2 581.34 DL
+547.24 581.34 1 534.2 594.38 DL
+554.09 642.91 1 541.05 629.87 DL
+554.09 629.87 1 541.05 642.91 DL
+559.57 560.64 1 546.53 547.6 DL
+559.57 547.6 1 546.53 560.64 DL
+560.26 646.05 1 547.22 633.01 DL
+560.26 633.01 1 547.22 646.05 DL
+570.54 642.25 1 557.5 629.21 DL
+570.54 629.21 1 557.5 642.25 DL
+571.91 631.02 1 558.87 617.98 DL
+571.91 617.98 1 558.87 631.02 DL
+572.59 536.74 1 559.56 523.7 DL
+572.59 523.7 1 559.56 536.74 DL
+580.13 620.45 1 567.09 607.41 DL
+580.13 607.41 1 567.09 620.45 DL
+582.19 646.28 1 569.15 633.24 DL
+582.19 633.24 1 569.15 646.28 DL
+582.87 556.16 1 569.84 543.12 DL
+582.87 543.12 1 569.84 556.16 DL
+585.62 527.42 1 572.58 514.38 DL
+585.62 514.38 1 572.58 527.42 DL
+586.3 599.84 1 573.26 586.8 DL
+586.3 586.8 1 573.26 599.84 DL
+588.36 618.12 1 575.32 605.08 DL
+588.36 605.08 1 575.32 618.12 DL
+591.1 620.56 1 578.06 607.52 DL
+591.1 607.52 1 578.06 620.56 DL
+608.23 641.31 1 595.19 628.27 DL
+608.23 628.27 1 595.19 641.31 DL
+609.6 501.48 1 596.56 488.44 DL
+609.6 488.44 1 596.56 501.48 DL
+610.97 639.18 1 597.93 626.14 DL
+610.97 626.14 1 597.93 639.18 DL
+613.03 629.62 1 599.99 616.58 DL
+613.03 616.58 1 599.99 629.62 DL
+614.4 616.62 1 601.36 603.58 DL
+614.4 603.58 1 601.36 616.62 DL
+618.51 645.25 1 605.47 632.21 DL
+618.51 632.21 1 605.47 645.25 DL
+622.62 607.69 1 609.58 594.66 DL
+622.62 594.66 1 609.58 607.69 DL
+630.85 640.35 1 617.81 627.31 DL
+630.85 627.31 1 617.81 640.35 DL
+631.53 618.16 1 618.49 605.12 DL
+631.53 605.12 1 618.49 618.16 DL
+632.22 522.85 1 619.18 509.81 DL
+632.22 509.81 1 619.18 522.85 DL
+632.9 544.72 1 619.86 531.68 DL
+632.9 531.68 1 619.86 544.72 DL
+633.59 310.75 1 620.55 297.71 DL
+633.59 297.71 1 620.55 310.75 DL
+635.64 618.16 1 622.61 605.12 DL
+635.64 605.12 1 622.61 618.16 DL
+642.5 639.7 1 629.46 626.66 DL
+642.5 626.66 1 629.46 639.7 DL
+646.61 550.35 1 633.57 537.31 DL
+646.61 537.31 1 633.57 550.35 DL
+648.67 525.3 1 635.63 512.26 DL
+648.67 512.26 1 635.63 525.3 DL
+660.32 632.38 1 647.28 619.34 DL
+660.32 619.34 1 647.28 632.38 DL
+663.74 632.82 1 650.7 619.79 DL
+663.74 619.79 1 650.7 632.82 DL
+672.65 643.44 1 659.61 630.4 DL
+672.65 630.4 1 659.61 643.44 DL
+676.76 633.92 1 663.73 620.89 DL
+676.76 620.89 1 663.73 633.92 DL
+685.67 535.72 1 672.64 522.68 DL
+685.67 522.68 1 672.64 535.72 DL
+687.04 636.37 1 674.01 623.33 DL
+687.04 623.33 1 674.01 636.37 DL
+690.47 601.39 1 677.43 588.35 DL
+690.47 588.35 1 677.43 601.39 DL
+691.84 571.13 1 678.8 558.1 DL
+691.84 558.1 1 678.8 571.13 DL
+695.95 326.8 1 682.92 313.76 DL
+695.95 313.76 1 682.92 326.8 DL
+708.98 643.53 1 695.94 630.49 DL
+708.98 630.49 1 695.94 643.53 DL
+711.72 636.7 1 698.68 623.66 DL
+711.72 623.66 1 698.68 636.7 DL
+713.09 631.44 1 700.05 618.4 DL
+713.09 618.4 1 700.05 631.44 DL
+713.77 641.69 1 700.73 628.65 DL
+713.77 628.65 1 700.73 641.69 DL
+715.83 646.09 1 702.79 633.05 DL
+715.83 633.05 1 702.79 646.09 DL
+716.51 376.82 1 703.48 363.78 DL
+716.51 363.78 1 703.48 376.82 DL
+722 577.2 1 708.96 564.16 DL
+722 564.16 1 708.96 577.2 DL
+728.16 639.89 1 715.13 626.85 DL
+728.16 626.85 1 715.13 639.89 DL
+728.85 585.34 1 715.81 572.3 DL
+728.85 572.3 1 715.81 585.34 DL
+730.91 640.64 1 717.87 627.6 DL
+730.91 627.6 1 717.87 640.64 DL
+732.96 622.79 1 719.92 609.75 DL
+732.96 609.75 1 719.92 622.79 DL
+734.33 422 1 721.29 408.96 DL
+734.33 408.96 1 721.29 422 DL
+738.44 527.75 1 725.41 514.72 DL
+738.44 514.72 1 725.41 527.75 DL
+740.5 500.8 1 727.46 487.76 DL
+740.5 487.76 1 727.46 500.8 DL
+744.61 626.49 1 731.57 613.45 DL
+744.61 613.45 1 731.57 626.49 DL
+754.89 637.81 1 741.85 624.77 DL
+754.89 624.77 1 741.85 637.81 DL
+765.17 641.29 1 752.13 628.26 DL
+765.17 628.26 1 752.13 641.29 DL
+765.86 634.66 1 752.82 621.62 DL
+765.86 621.62 1 752.82 634.66 DL
+771.34 628.72 1 758.3 615.69 DL
+771.34 615.69 1 758.3 628.72 DL
+772.03 645.19 1 758.99 632.15 DL
+772.03 632.15 1 758.99 645.19 DL
+773.4 645.83 1 760.36 632.79 DL
+773.4 632.79 1 760.36 645.83 DL
+774.08 589.22 1 761.04 576.18 DL
+774.08 576.18 1 761.04 589.22 DL
+778.88 607.15 1 765.84 594.11 DL
+778.88 594.11 1 765.84 607.15 DL
+781.62 625.17 1 768.58 612.13 DL
+781.62 612.13 1 768.58 625.17 DL
+787.79 636.78 1 774.75 623.74 DL
+787.79 623.74 1 774.75 636.78 DL
+795.33 618.62 1 782.29 605.58 DL
+795.33 605.58 1 782.29 618.62 DL
+796.7 541.2 1 783.66 528.16 DL
+796.7 528.16 1 783.66 541.2 DL
+797.38 628.84 1 784.34 615.81 DL
+797.38 615.81 1 784.34 628.84 DL
+798.07 639.59 1 785.03 626.55 DL
+798.07 626.55 1 785.03 639.59 DL
+800.12 610.99 1 787.09 597.95 DL
+800.12 597.95 1 787.09 610.99 DL
+806.29 598.51 1 793.25 585.47 DL
+806.29 585.47 1 793.25 598.51 DL
+809.72 608.74 1 796.68 595.7 DL
+809.72 595.7 1 796.68 608.74 DL
+816.57 475.48 1 803.53 462.44 DL
+816.57 462.44 1 803.53 475.48 DL
+817.94 621.73 1 804.9 608.69 DL
+817.94 608.69 1 804.9 621.73 DL
+824.11 624.8 1 811.07 611.76 DL
+824.11 611.76 1 811.07 624.8 DL
+824.8 645.65 1 811.76 632.61 DL
+824.8 632.61 1 811.76 645.65 DL
+830.28 625.16 1 817.24 612.12 DL
+830.28 612.12 1 817.24 625.16 DL
+832.34 505.22 1 819.3 492.18 DL
+832.34 492.18 1 819.3 505.22 DL
+833.71 646.81 1 820.67 633.77 DL
+833.71 633.77 1 820.67 646.81 DL
+836.45 572.13 1 823.41 559.09 DL
+836.45 559.09 1 823.41 572.13 DL
+839.19 153.19 1 826.15 140.15 DL
+839.19 140.15 1 826.15 153.19 DL
+843.3 645.29 1 830.26 632.25 DL
+843.3 632.25 1 830.26 645.29 DL
+850.15 635.56 1 837.12 622.52 DL
+850.15 622.52 1 837.12 635.56 DL
+857.69 628.77 1 844.65 615.73 DL
+857.69 615.73 1 844.65 628.77 DL
+861.12 638.26 1 848.08 625.22 DL
+861.12 625.22 1 848.08 638.26 DL
+863.86 631.59 1 850.82 618.55 DL
+863.86 618.55 1 850.82 631.59 DL
+872.08 593.09 1 859.05 580.05 DL
+872.08 580.05 1 859.05 593.09 DL
+884.42 641.27 1 871.38 628.23 DL
+884.42 628.23 1 871.38 641.27 DL
+885.11 609.24 1 872.07 596.2 DL
+885.11 596.2 1 872.07 609.24 DL
+887.85 397.18 1 874.81 384.14 DL
+887.85 384.14 1 874.81 397.18 DL
+889.22 638.67 1 876.18 625.63 DL
+889.22 625.63 1 876.18 638.67 DL
+894.7 522.75 1 881.66 509.71 DL
+894.7 509.71 1 881.66 522.75 DL
+895.39 642.12 1 882.35 629.08 DL
+895.39 629.08 1 882.35 642.12 DL
+899.5 622.9 1 886.46 609.86 DL
+899.5 609.86 1 886.46 622.9 DL
+904.3 526.86 1 891.26 513.82 DL
+904.3 513.82 1 891.26 526.86 DL
+905.67 578.33 1 892.63 565.29 DL
+905.67 565.29 1 892.63 578.33 DL
+912.52 569.68 1 899.48 556.65 DL
+912.52 556.65 1 899.48 569.68 DL
+919.37 647.75 1 906.33 634.71 DL
+919.37 634.71 1 906.33 647.75 DL
+937.19 537.41 1 924.15 524.38 DL
+937.19 524.38 1 924.15 537.41 DL
+941.99 627.42 1 928.95 614.38 DL
+941.99 614.38 1 928.95 627.42 DL
+944.73 631.71 1 931.69 618.67 DL
+944.73 618.67 1 931.69 631.71 DL
+948.84 644.42 1 935.8 631.39 DL
+948.84 631.39 1 935.8 644.42 DL
+955.7 614.86 1 942.66 601.82 DL
+955.7 601.82 1 942.66 614.86 DL
+960.49 602.53 1 947.45 589.5 DL
+960.49 589.5 1 947.45 602.53 DL
+972.14 627.22 1 959.1 614.18 DL
+972.14 614.18 1 959.1 627.22 DL
+974.88 645.1 1 961.85 632.06 DL
+974.88 632.06 1 961.85 645.1 DL
+976.94 647.83 1 963.9 634.79 DL
+976.94 634.79 1 963.9 647.83 DL
+979.68 609.72 1 966.64 596.68 DL
+979.68 596.68 1 966.64 609.72 DL
+987.22 573.34 1 974.18 560.31 DL
+987.22 560.31 1 974.18 573.34 DL
+992.7 621.56 1 979.66 608.52 DL
+992.7 608.52 1 979.66 621.56 DL
+993.39 601.63 1 980.35 588.59 DL
+993.39 588.59 1 980.35 601.63 DL
+998.19 637.93 1 985.15 624.89 DL
+998.19 624.89 1 985.15 637.93 DL
+1002.98 391.6 1 989.94 378.56 DL
+1002.98 378.56 1 989.94 391.6 DL
+1007.1 645.76 1 994.06 632.73 DL
+1007.1 632.73 1 994.06 645.76 DL
+1013.26 638.51 1 1000.22 625.47 DL
+1013.26 625.47 1 1000.22 638.51 DL
+1018.06 438.08 1 1005.02 425.04 DL
+1018.06 425.04 1 1005.02 438.08 DL
+1022.17 636.8 1 1009.13 623.76 DL
+1022.17 623.76 1 1009.13 636.8 DL
+1028.34 613.74 1 1015.3 600.7 DL
+1028.34 600.7 1 1015.3 613.74 DL
+1035.88 594.66 1 1022.84 581.62 DL
+1035.88 581.62 1 1022.84 594.66 DL
+1037.25 519.73 1 1024.21 506.69 DL
+1037.25 506.69 1 1024.21 519.73 DL
+1040.68 644.88 1 1027.64 631.84 DL
+1040.68 631.84 1 1027.64 644.88 DL
+1051.64 643.21 1 1038.6 630.17 DL
+1051.64 630.17 1 1038.6 643.21 DL
+1053.01 595.29 1 1039.97 582.26 DL
+1053.01 582.26 1 1039.97 595.29 DL
+1055.07 576.67 1 1042.03 563.63 DL
+1055.07 563.63 1 1042.03 576.67 DL
+1060.55 523.55 1 1047.51 510.51 DL
+1060.55 510.51 1 1047.51 523.55 DL
+1062.61 639.35 1 1049.57 626.31 DL
+1062.61 626.31 1 1049.57 639.35 DL
+1063.29 626.72 1 1050.25 613.68 DL
+1063.29 613.68 1 1050.25 626.72 DL
+1071.52 625.99 1 1058.48 612.95 DL
+1071.52 612.95 1 1058.48 625.99 DL
+1081.8 566.16 1 1068.76 553.13 DL
+1081.8 553.13 1 1068.76 566.16 DL
+1083.17 635.95 1 1070.13 622.91 DL
+1083.17 622.91 1 1070.13 635.95 DL
+1090.02 646.08 1 1076.98 633.04 DL
+1090.02 633.04 1 1076.98 646.08 DL
+1099.62 562.31 1 1086.58 549.28 DL
+1099.62 549.28 1 1086.58 562.31 DL
+1100.3 279.82 1 1087.26 266.78 DL
+1100.3 266.78 1 1087.26 279.82 DL
+1107.15 638.39 1 1094.12 625.35 DL
+1107.15 625.35 1 1094.12 638.39 DL
+1109.21 634.12 1 1096.17 621.08 DL
+1109.21 621.08 1 1096.17 634.12 DL
+1115.38 634.82 1 1102.34 621.78 DL
+1115.38 621.78 1 1102.34 634.82 DL
+1131.14 573.79 1 1118.1 560.75 DL
+1131.14 560.75 1 1118.1 573.79 DL
+1135.94 568.62 1 1122.9 555.58 DL
+1135.94 555.58 1 1122.9 568.62 DL
+1137.31 579.25 1 1124.27 566.21 DL
+1137.31 566.21 1 1124.27 579.25 DL
+1148.96 648.13 1 1135.92 635.09 DL
+1148.96 635.09 1 1135.92 648.13 DL
+1155.81 624.43 1 1142.77 611.39 DL
+1155.81 611.39 1 1142.77 624.43 DL
+1159.92 565 1 1146.89 551.96 DL
+1159.92 551.96 1 1146.89 565 DL
+1165.41 629.66 1 1152.37 616.62 DL
+1165.41 616.62 1 1152.37 629.66 DL
+4.00 2 0 [16 16 ] 0 0.30 LAG
+1163 641.68 1 135 641.68 DL
+1.00 GC
+1147 64 1147 155 886 155 3 886 64 DPLF
+0.15 0.55 0.87 RC
+N
+921.93 80.91 6 CIRC
+cp
+f
+4.00 0 0 [] 0 0.96 0.47 0.16 LAR
+926.17 113.74 1 917.69 105.26 DL
+926.17 105.26 1 917.69 113.74 DL
+4.00 2 0 [16 16 ] 0 0.30 LAG
+951.87 138.09 1 891.99 138.09 DL
+/Helvetica 24 F
+0.00 GC
+GS
+956.37 86.91 M
+1 -1 scale
+(Normal Instance) t
+GR
+GS
+956.37 115.5 M
+1 -1 scale
+(Outlier) t
+GR
+GS
+956.37 144.09 M
+1 -1 scale
+(Outlier Threshold) t
+GR
+2.40 0 0 [] 0 0.00 LAG
+1147 155 1147 64 886 64 3 886 155 DPL
+%%Trailer
+%%Pages: 1
+%%EOF
