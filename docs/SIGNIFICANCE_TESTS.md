@@ -105,7 +105,7 @@ This analysis is supplementary. It is not produced by `friedman_nemenyi_figure.m
 | LR | F1-score | DPP | 9.89e-04 | +0.0145 | +0.071 | negligible |
 | LR | F1-score | SMOTE | 2.95e-04 | +0.0134 | +0.083 | negligible |
 
-The Wilcoxon test is more sensitive for three reasons. It adjusts for 6 comparisons (OTOMO against each baseline) instead of all 21, its result does not depend on the other five methods (Benavoli et al., 2016), and it ranks the sizes of the 66 differences instead of using only each pair's ordering of seven methods. This lets it detect small but consistent advantages that the Nemenyi test does not flag. The following MATLAB code reproduces this analysis when run from a folder that contains `Results/Metric_Summaries/`:
+The Wilcoxon test is more sensitive for three reasons. It adjusts for 6 comparisons (OTOMO against each baseline) instead of all 21, its result does not depend on the other five methods (Benavoli et al., 2016), and it ranks the sizes of the 66 differences instead of using only each pair's ordering of seven methods. This lets it detect small but consistent advantages that the Nemenyi test does not flag. The following MATLAB code reproduces this analysis when run from the repository root:
 
 ```matlab
 folder = fullfile('Results','Metric_Summaries'); tag = "gamma_001_0.1";
@@ -158,7 +158,7 @@ In MATLAB R2021a or later with the Statistics and Machine Learning Toolbox, run 
 friedman_nemenyi_figure
 ```
 
-**Inputs.** The script reads eight CSVs in `Results/Metric_Summaries/` named `<Classifier>_All_Datasets_<Metric>_<gammaTag>.csv`, where `<Classifier>` is `Random_Forest` or `Logistic_Regression` and `<Metric>` is `ROC_AUC`, `G_Measure`, `F1_Score` or `MCC_Score`; for example, `Random_Forest_All_Datasets_ROC_AUC_gamma_001_0.1.csv`. These files are written by the experiment driver. The CSVs used in Sections 6 and 7 are not included in this repository; any CSVs in this format can be used:
+**Inputs.** The script reads eight CSVs in `Results/Metric_Summaries/` named `<Classifier>_All_Datasets_<Metric>_<gammaTag>.csv`, where `<Classifier>` is `Random_Forest` or `Logistic_Regression` and `<Metric>` is `ROC_AUC`, `G_Measure`, `F1_Score` or `MCC_Score`; for example, `Random_Forest_All_Datasets_ROC_AUC_gamma_001_0.1.csv`. These files are written by the experiment driver `main.m`. The CSVs used in Sections 6 and 7 are included in `Results/Metric_Summaries/`, and any CSVs in this format can be used:
 
 ```text
 Source,Target,OTOMO,CORAL,TCA+,DPP,ADASYN,SMOTE,TOMO

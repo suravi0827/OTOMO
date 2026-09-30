@@ -1,0 +1,663 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: (MATLAB, The MathWorks, Inc. Version 25.1.0.2943329 R2025a. Operating System: Darwin 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:41 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8122 arm64)
+%%Title: ./ar6_mahalanobis_outliers.eps
+%%CreationDate: 2026-09-29T23:21:07
+%%Pages: (atend)
+%%BoundingBox:    0     0   575   360
+%%LanguageLevel: 3
+%%EndComments
+/bd{bind def}bind def
+/ld{load def}bd
+/GR/grestore ld
+/GS/gsave ld
+/RM/rmoveto ld
+/C/curveto ld
+/t/show ld
+/L/lineto ld
+/RL/rlineto ld
+/ML/setmiterlimit ld
+/CT/concat ld
+/f/fill ld
+/N/newpath ld
+/S/stroke ld
+/CC/setcmykcolor ld
+/A/ashow ld
+/cp/closepath ld
+/RC/setrgbcolor ld
+/LJ/setlinejoin ld
+/GC/setgray ld
+/LW/setlinewidth ld
+/LC/setlinecap ld
+/LJ/setlinejoin ld
+/SD/setdash ld
+/M/moveto ld
+/TX/translate ld
+/R/rotate ld
+/SC/scale ld
+
+/CIRC {0 360 arc}bd
+/F {exch findfont exch scalefont setfont}bd
+/edef{ exch def } def
+/scaleImg{ % width height outputDPI scaleImg
+   /outputDPI edef
+   /height edef
+   /width edef
+   /psDPI 72 def
+   /sDPI psDPI outputDPI div def % DPI scale
+   width sDPI mul % width * (psDPI / outputDPI)
+   height sDPI mul
+   scale
+} def
+
+% LineAttribute methods.linewidth linejoin linecap [dashpattern] dashOffset colorVal(s) <method>
+/LAG {setgray setdash setlinecap setlinejoin setlinewidth} bd
+/LAR {setrgbcolor setdash setlinecap setlinejoin setlinewidth} bd
+/LAC {setcmykcolor setdash setlinecap setlinejoin setlinewidth} bd
+
+% draw line impl
+/DL { % VertexList NVerts StartPt DL
+  N moveto { lineto } repeat stroke} def
+% draw unfilled polyline impl
+/DPL { % VertexList NVerts StartPt DPL
+  N moveto { lineto } repeat closepath stroke} def
+% draw filled polyline impl
+/DPLF { % VertexList NVerts StartPt DPLF
+  N moveto { lineto } repeat closepath fill } def
+/DRL { % VertexList NVerts StartPt DRL
+  N moveto { rlineto } repeat stroke} def
+% draw unfilled polyline impl
+/DRPL { % VertexList NVerts StartPt DRPL
+  N moveto { rlineto } repeat closepath stroke} def
+% draw filled polyline impl
+/DRPLF { % VertexList NVerts StartPt DRPLF
+  N moveto { rlineto } repeat closepath fill } def
+
+%%Page: 1 1
+%%PageBoundingBox:    0     0   575   360
+%%BeginPageSetup
+N
+0 0 M
+574.05 0 L
+574.05 359.3 L
+0 359.3 L
+cp
+clip
+1.00 GC
+0 359.3 574.05 359.3 574.05 0 3 0 0 DPLF
+[   0.5 0 0  -0.5 0 356.3] CT
+%%EndPageSetup
+-40.4 -39 TX
+1.00 LW
+1163 48 1163 681 135 681 3 135 48 DPLF
+2.40 2 0 [] 0 0.85 LAG
+135 681 1 135 48 DL
+306.33 681 1 306.33 48 DL
+477.67 681 1 477.67 48 DL
+649 681 1 649 48 DL
+820.33 681 1 820.33 48 DL
+991.67 681 1 991.67 48 DL
+1163 681 1 1163 48 DL
+1163 681 1 135 681 DL
+1163 610.67 1 135 610.67 DL
+1163 540.33 1 135 540.33 DL
+1163 470 1 135 470 DL
+1163 399.67 1 135 399.67 DL
+1163 329.33 1 135 329.33 DL
+1163 259 1 135 259 DL
+1163 188.67 1 135 188.67 DL
+1163 118.33 1 135 118.33 DL
+1163 48 1 135 48 DL
+/Helvetica 30.8 F
+0.00 GC
+GS
+551.5 747.6 M
+1 -1 scale
+(Instance Index) t
+GR
+2.40 2 2 [] 0 0.00 LAG
+1163 681 1 135 681 DL
+1163 48 1 135 48 DL
+135 670.72 1 135 681 DL
+135 48 1 135 58.28 DL
+306.33 670.72 1 306.33 681 DL
+306.33 48 1 306.33 58.28 DL
+477.67 670.72 1 477.67 681 DL
+477.67 48 1 477.67 58.28 DL
+649 670.72 1 649 681 DL
+649 48 1 649 58.28 DL
+820.33 670.72 1 820.33 681 DL
+820.33 48 1 820.33 58.28 DL
+991.67 670.72 1 991.67 681 DL
+991.67 48 1 991.67 58.28 DL
+1163 670.72 1 1163 681 DL
+1163 48 1 1163 58.28 DL
+/Helvetica 28 F
+GS
+127 712.6 M
+1 -1 scale
+(0) t
+GR
+GS
+290.83 712.6 M
+1 -1 scale
+(20) t
+GR
+GS
+462.17 712.6 M
+1 -1 scale
+(40) t
+GR
+GS
+633.5 712.6 M
+1 -1 scale
+(60) t
+GR
+GS
+804.83 712.6 M
+1 -1 scale
+(80) t
+GR
+GS
+968.17 712.6 M
+1 -1 scale
+(100) t
+GR
+GS
+1139.5 712.6 M
+1 -1 scale
+(120) t
+GR
+/Helvetica 30.8 F
+GS
+65.4 573 M
+1 -1 scale
+90 R
+(Squared Mahalanobis Distance) t
+GR
+135 48 1 135 681 DL
+1163 48 1 1163 681 DL
+145.28 681 1 135 681 DL
+1163 681 1 1152.72 681 DL
+145.28 610.67 1 135 610.67 DL
+1163 610.67 1 1152.72 610.67 DL
+145.28 540.33 1 135 540.33 DL
+1163 540.33 1 1152.72 540.33 DL
+145.28 470 1 135 470 DL
+1163 470 1 1152.72 470 DL
+145.28 399.67 1 135 399.67 DL
+1163 399.67 1 1152.72 399.67 DL
+145.28 329.33 1 135 329.33 DL
+1163 329.33 1 1152.72 329.33 DL
+145.28 259 1 135 259 DL
+1163 259 1 1152.72 259 DL
+145.28 188.67 1 135 188.67 DL
+1163 188.67 1 1152.72 188.67 DL
+145.28 118.33 1 135 118.33 DL
+1163 118.33 1 1152.72 118.33 DL
+145.28 48 1 135 48 DL
+1163 48 1 1152.72 48 DL
+/Helvetica 28 F
+GS
+109.4 689 M
+1 -1 scale
+(0) t
+GR
+GS
+94.4 618.67 M
+1 -1 scale
+(20) t
+GR
+GS
+94.4 548.33 M
+1 -1 scale
+(40) t
+GR
+GS
+94.4 478 M
+1 -1 scale
+(60) t
+GR
+GS
+94.4 407.67 M
+1 -1 scale
+(80) t
+GR
+GS
+78.4 337.33 M
+1 -1 scale
+(100) t
+GR
+GS
+78.4 267 M
+1 -1 scale
+(120) t
+GR
+GS
+78.4 196.67 M
+1 -1 scale
+(140) t
+GR
+GS
+78.4 126.33 M
+1 -1 scale
+(160) t
+GR
+GS
+78.4 56 M
+1 -1 scale
+(180) t
+GR
+0.15 0.55 0.87 RC
+N
+143.57 621.54 6.71 CIRC
+cp
+f
+N
+152.13 622.32 6.71 CIRC
+cp
+f
+N
+160.7 569.3 6.71 CIRC
+cp
+f
+N
+177.83 596.23 6.71 CIRC
+cp
+f
+N
+186.4 624.93 6.71 CIRC
+cp
+f
+N
+194.97 637.96 6.71 CIRC
+cp
+f
+N
+203.53 588.22 6.71 CIRC
+cp
+f
+N
+212.1 618.79 6.71 CIRC
+cp
+f
+N
+220.67 643.21 6.71 CIRC
+cp
+f
+N
+229.23 651.13 6.71 CIRC
+cp
+f
+N
+237.8 649.16 6.71 CIRC
+cp
+f
+N
+246.37 644.63 6.71 CIRC
+cp
+f
+N
+254.93 639.52 6.71 CIRC
+cp
+f
+N
+263.5 643.21 6.71 CIRC
+cp
+f
+N
+272.07 577.59 6.71 CIRC
+cp
+f
+N
+280.63 614.05 6.71 CIRC
+cp
+f
+N
+289.2 631.75 6.71 CIRC
+cp
+f
+N
+297.77 638.97 6.71 CIRC
+cp
+f
+N
+306.33 609.54 6.71 CIRC
+cp
+f
+N
+314.9 557.88 6.71 CIRC
+cp
+f
+N
+323.47 504.52 6.71 CIRC
+cp
+f
+N
+332.03 563.28 6.71 CIRC
+cp
+f
+N
+340.6 572.9 6.71 CIRC
+cp
+f
+N
+349.17 622.73 6.71 CIRC
+cp
+f
+N
+357.73 624.95 6.71 CIRC
+cp
+f
+N
+366.3 524.55 6.71 CIRC
+cp
+f
+N
+374.87 615.65 6.71 CIRC
+cp
+f
+N
+392 565.7 6.71 CIRC
+cp
+f
+N
+400.57 578.84 6.71 CIRC
+cp
+f
+N
+409.13 620.79 6.71 CIRC
+cp
+f
+N
+426.27 626.63 6.71 CIRC
+cp
+f
+N
+434.83 557.18 6.71 CIRC
+cp
+f
+N
+443.4 646.06 6.71 CIRC
+cp
+f
+N
+451.97 659.29 6.71 CIRC
+cp
+f
+N
+460.53 640.53 6.71 CIRC
+cp
+f
+N
+469.1 542.61 6.71 CIRC
+cp
+f
+N
+477.67 636.23 6.71 CIRC
+cp
+f
+N
+486.23 630.68 6.71 CIRC
+cp
+f
+N
+494.8 619.74 6.71 CIRC
+cp
+f
+N
+503.37 601.15 6.71 CIRC
+cp
+f
+N
+511.93 595.07 6.71 CIRC
+cp
+f
+N
+520.5 650.69 6.71 CIRC
+cp
+f
+N
+529.07 650.69 6.71 CIRC
+cp
+f
+N
+537.63 638.16 6.71 CIRC
+cp
+f
+N
+546.2 622.39 6.71 CIRC
+cp
+f
+N
+554.77 629.04 6.71 CIRC
+cp
+f
+N
+563.33 578.75 6.71 CIRC
+cp
+f
+N
+571.9 578.75 6.71 CIRC
+cp
+f
+N
+580.47 625.99 6.71 CIRC
+cp
+f
+N
+589.03 589.03 6.71 CIRC
+cp
+f
+N
+597.6 637.88 6.71 CIRC
+cp
+f
+N
+606.17 650.69 6.71 CIRC
+cp
+f
+N
+614.73 650.69 6.71 CIRC
+cp
+f
+N
+623.3 650.69 6.71 CIRC
+cp
+f
+N
+631.87 643.96 6.71 CIRC
+cp
+f
+N
+640.43 643.96 6.71 CIRC
+cp
+f
+N
+657.57 538.7 6.71 CIRC
+cp
+f
+N
+666.13 622.77 6.71 CIRC
+cp
+f
+N
+674.7 534.88 6.71 CIRC
+cp
+f
+N
+683.27 586.66 6.71 CIRC
+cp
+f
+N
+691.83 567.95 6.71 CIRC
+cp
+f
+N
+700.4 630.68 6.71 CIRC
+cp
+f
+N
+734.67 592.26 6.71 CIRC
+cp
+f
+N
+743.23 634.25 6.71 CIRC
+cp
+f
+N
+751.8 516.74 6.71 CIRC
+cp
+f
+N
+768.93 652.69 6.71 CIRC
+cp
+f
+N
+794.63 615.21 6.71 CIRC
+cp
+f
+N
+803.2 632.06 6.71 CIRC
+cp
+f
+N
+811.77 585.47 6.71 CIRC
+cp
+f
+N
+828.9 561.03 6.71 CIRC
+cp
+f
+N
+837.47 561.6 6.71 CIRC
+cp
+f
+N
+846.03 561.03 6.71 CIRC
+cp
+f
+N
+854.6 567.76 6.71 CIRC
+cp
+f
+N
+880.3 594.07 6.71 CIRC
+cp
+f
+N
+897.43 628.61 6.71 CIRC
+cp
+f
+N
+906 595.88 6.71 CIRC
+cp
+f
+N
+914.57 561.77 6.71 CIRC
+cp
+f
+N
+923.13 562.31 6.71 CIRC
+cp
+f
+N
+931.7 606.9 6.71 CIRC
+cp
+f
+N
+940.27 633.55 6.71 CIRC
+cp
+f
+N
+948.83 607.44 6.71 CIRC
+cp
+f
+N
+957.4 650.69 6.71 CIRC
+cp
+f
+N
+965.97 605.62 6.71 CIRC
+cp
+f
+N
+974.53 591.41 6.71 CIRC
+cp
+f
+N
+983.1 576.62 6.71 CIRC
+cp
+f
+N
+991.67 579.78 6.71 CIRC
+cp
+f
+N
+1000.23 615.34 6.71 CIRC
+cp
+f
+4.00 0 0 [] 0 0.96 0.47 0.16 LAR
+175.79 403.29 1 162.75 390.25 DL
+175.79 390.25 1 162.75 403.29 DL
+389.95 324.61 1 376.91 311.57 DL
+389.95 311.57 1 376.91 324.61 DL
+424.22 382.82 1 411.18 369.78 DL
+424.22 369.78 1 411.18 382.82 DL
+655.52 467.83 1 642.48 454.79 DL
+655.52 454.79 1 642.48 467.83 DL
+715.49 235.93 1 702.45 222.89 DL
+715.49 222.89 1 702.45 235.93 DL
+724.05 107.7 1 711.01 94.66 DL
+724.05 94.66 1 711.01 107.7 DL
+732.62 447.91 1 719.58 434.87 DL
+732.62 434.87 1 719.58 447.91 DL
+766.89 363.39 1 753.85 350.35 DL
+766.89 350.35 1 753.85 363.39 DL
+784.02 484.79 1 770.98 471.75 DL
+784.02 471.75 1 770.98 484.79 DL
+792.59 314.28 1 779.55 301.24 DL
+792.59 301.24 1 779.55 314.28 DL
+826.85 421.03 1 813.81 407.99 DL
+826.85 407.99 1 813.81 421.03 DL
+869.69 487.47 1 856.65 474.43 DL
+869.69 474.43 1 856.65 487.47 DL
+878.25 472.17 1 865.21 459.14 DL
+878.25 459.14 1 865.21 472.17 DL
+895.39 453.2 1 882.35 440.16 DL
+895.39 440.16 1 882.35 453.2 DL
+4.00 2 0 [16 16 ] 0 0.30 LAG
+1163 496.95 1 135 496.95 DL
+1.00 GC
+1147 64 1147 155 886 155 3 886 64 DPLF
+0.15 0.55 0.87 RC
+N
+921.93 80.91 6 CIRC
+cp
+f
+4.00 0 0 [] 0 0.96 0.47 0.16 LAR
+926.17 113.74 1 917.69 105.26 DL
+926.17 105.26 1 917.69 113.74 DL
+4.00 2 0 [16 16 ] 0 0.30 LAG
+951.87 138.09 1 891.99 138.09 DL
+/Helvetica 24 F
+0.00 GC
+GS
+956.37 86.91 M
+1 -1 scale
+(Normal Instance) t
+GR
+GS
+956.37 115.5 M
+1 -1 scale
+(Outlier) t
+GR
+GS
+956.37 144.09 M
+1 -1 scale
+(Outlier Threshold) t
+GR
+2.40 0 0 [] 0 0.00 LAG
+1147 155 1147 64 886 64 3 886 155 DPL
+%%Trailer
+%%Pages: 1
+%%EOF
