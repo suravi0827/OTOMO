@@ -138,19 +138,7 @@ end
 
 The Holm $p$ values in the table above are the output of this code. MATLAB's `signrank` uses the normal approximation here, because each comparison has more than 15 non-zero differences. An independent SciPy implementation gives p-values within 2% of these and the same 48 decisions.
 
-## 8. Limitations and assumptions
-
-- **The pairs are not independent.** The 66 pairs come from 18 projects. Each project appears in 8 pairs (4 as source, 4 as target), and each RELINK project in 4. The tests treat the pairs as independent blocks, so the effective sample size is likely below 66, and the p-values and CD are likely too optimistic by an unknown amount. Treating pairs as blocks is standard practice in cross-project defect prediction (CPDP). As a sensitivity check, if the 66 pairs carried only the information of 18 independent pairs (one per project: $\chi^2_F$ scaled by 18/66, CD = 2.12), all eight omnibus tests would still reject $H_0$ (smallest $F_F$ = 3.28 against $F_{\text{crit}}$ = 2.19), but only 17 of OTOMO's 30 significant post-hoc wins would remain.
-- **Nemenyi is conservative.** It adjusts for all 21 pairwise comparisons, although the main interest is OTOMO against each baseline. For comparisons against a control method, Demšar (2006) describes the more powerful Bonferroni–Dunn test. It uses the same CD formula with $q_{0.05} = 2.6383$ for $L = 7$ (Demšar lists 2.638), which gives $\mathrm{CD}_{\mathrm{BD}} = 0.9921$. With this test, OTOMO would also be significantly better than TOMO for RF F1-score (rank difference 1.09) and than SMOTE for LR F1-score (1.00); no other verdict would change. Both comparisons are among the 11 extra Wilcoxon results. We report Nemenyi to match the paper.
-- **Seed variability is not modelled.** Each pair enters the test as a mean over 30 seeds, so the tests address variation across pairs, not across seeds within a pair. Because the means are stored with four decimals, methods whose means agree to four decimals count as tied.
-- **Ties and the `tieCorrection` switch.** Ties receive average ranks, and the paper's $\chi^2_F$ has no tie correction. Ties reduce the variance of the ranks, so the uncorrected statistic is smaller (slightly for the 66 pairs, markedly within RELINK), which makes the test conservative. In each test, 3–6 of the 66 pairs contain ties. Setting `tieCorrection = true` switches to the tie-corrected statistic used by MATLAB's `friedman`, R's `friedman.test` and SciPy's `friedmanchisquare`, where $r_{ij}$ is the rank of method $j$ on pair $i$:
-
-  $$\chi^2_{F,\text{ties}} = \frac{(L-1)\,\eta^2 \sum_{j}\left(R_j - \frac{L+1}{2}\right)^2}{\sum_{i,j} r_{ij}^2 - \eta L (L+1)^2/4}$$
-
-  On the 66 pairs, the correction raises $\chi^2_F$ slightly (for example, from 77.06 to 78.60 for RF ROC-AUC) and changes no decision; CD is unaffected. Within RELINK ($\eta = 6$; A → S and A → Z are six-way ties), it would reject $H_0$ for LR ROC-AUC, G-mean and MCC, which the paper's formula does not.
-- **Several separate tests.** There are eight tests (2 classifiers × 4 metrics), each at $\alpha = 0.05$ with no correction across them. The metrics are computed from the same models and are correlated. The eight results should therefore be read as consistency across evaluation settings, not as eight independent confirmations.
-
-## 9. How to run
+## 8. How to run
 
 In MATLAB R2021a or later with the Statistics and Machine Learning Toolbox, run the script from the repository root. The script uses `pwd` and starts with `clear; close all; clc`.
 
@@ -192,16 +180,3 @@ The format rules are:
 | `highlightMethod` | `"OTOMO"` | Method drawn in blue and used as the reference in the verdict columns |
 | `gammaTag` | `""` | Which `gamma_*` file set to use; empty means the only one present (error if there are several) |
 | `summaryFolder`, `outputFolder` | `Results/Metric_Summaries`, `Results/Significance_Tests` | Input and output folders |
-
-## 10. References
-
-- Benavoli, A., Corani, G., & Mangili, F. (2016). Should we really use post-hoc tests based on mean-ranks? *Journal of Machine Learning Research*, 17(5), 1–10.
-- Cliff, N. (1993). Dominance statistics: Ordinal analyses to answer ordinal questions. *Psychological Bulletin*, 114(3), 494–509.
-- Demšar, J. (2006). Statistical comparisons of classifiers over multiple data sets. *Journal of Machine Learning Research*, 7, 1–30.
-- Friedman, M. (1937). The use of ranks to avoid the assumption of normality implicit in the analysis of variance. *Journal of the American Statistical Association*, 32(200), 675–701.
-- Friedman, M. (1940). A comparison of alternative tests of significance for the problem of m rankings. *The Annals of Mathematical Statistics*, 11(1), 86–92.
-- Holm, S. (1979). A simple sequentially rejective multiple test procedure. *Scandinavian Journal of Statistics*, 6(2), 65–70.
-- Iman, R. L., & Davenport, J. M. (1980). Approximations of the critical region of the Friedman statistic. *Communications in Statistics – Theory and Methods*, 9(6), 571–595.
-- Nemenyi, P. B. (1963). *Distribution-free multiple comparisons*. PhD thesis, Princeton University.
-- Romano, J., Kromrey, J. D., Coraggio, J., & Skowronek, J. (2006). Appropriate statistics for ordinal level data: Should we really be using t-test and Cohen's d for evaluating group differences on the NSSE and other surveys? Paper presented at the annual meeting of the Florida Association of Institutional Research.
-- Wilcoxon, F. (1945). Individual comparisons by ranking methods. *Biometrics Bulletin*, 1(6), 80–83.
