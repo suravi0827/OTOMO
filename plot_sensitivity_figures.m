@@ -33,7 +33,7 @@ if ~exist(figureFolder,'dir')
 end
 
 classifiers = ["RF","LR"];
-metricLabels = {'ROC-AUC','G-mean','F1-score','MCC'};
+metricLabels = {'ROC-AUC (%)','G-mean (%)','F1-score (%)','MCC (%)'};
 metricFiles = {'ROC_AUC','G_Mean','F1','MCC'};
 metricColumns = {"ROC_AUC",["G_Mean","G_Measure"],"F1","MCC"};
 markers = {'s','o','^','d'};
@@ -45,7 +45,7 @@ for cc = 1:numel(classifiers)
         for r = 1:height(T)
             d = find(datasets == T.Dataset(r),1);
             g = find(gammas == T.Gamma(r),1);
-            metricValues(d,g) = double(T.(column)(r));
+            metricValues(d,g) = 100 * double(T.(column)(r));
         end
         outputFile = fullfile(figureFolder,sprintf('%s_Gamma_%s.eps', ...
             char(classifiers(cc)),metricFiles{mm}));
